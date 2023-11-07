@@ -71,23 +71,20 @@ const Adduser = ({ isOpen, onRequestClose, onSave }) => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-
-              <div className="mb-4">   
-              {/* <div className="inline-block relative mx-10 my-1 mb-20 w-56"> */}
-              <label htmlFor="name" className="block  my-2 font-medium text-gray-700">
-                  Select Group
+              <div className="mb-4">
+                <label htmlFor="status" className="block my-2 font-medium text-gray-700">
+                  Status
                 </label>
                 <input
-                  type="name"
-                  id="name"
-                  name="name"
+                  type="text"
+                  id="email"
+                  name="email"
                   className="form-input border border-gray-300 w-full"
-                  placeholder="Select groups to add for this user"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  />
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
-
               <div className="my-20">
                 <button
                   className={`bg-blue-500 hover-bg-blue-700 text-black font-bold py-2 px-4 rounded ${TwdButtonsConfig.hover}`}

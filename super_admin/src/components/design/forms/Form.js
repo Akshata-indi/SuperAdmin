@@ -1,26 +1,34 @@
-import React from 'react';
-import FormComponent from './FormComponent'; // Import your configuration
-import configForm from '../forms/configForm.json'
-
+import React from 'react'; // Import your configuration
+import configForm from './configForm.json'; // Import your JSON configuration file
+import ButtonStyle from '../button/ButtonStyle.json'
+import FormStyle from './FormStyle';
+import TextStyle from './TextStyle';
+import DateStyle from './DateStyle';
 
 const Form = () => {
   return (
-    <form className={FormComponent.form}>
+    <form className={FormStyle.form}>
       {configForm.map((field, index) => (
         <div className="mb-4" key={index}>
-          <label className={FormComponent.label} htmlFor={field.label}>
+          <label className={FormStyle.label} htmlFor={field.label}>
             {field.label}
           </label>
           <input
-            className={FormComponent.input}
-            type={field.type}
-            id={field.label}
-            placeholder={`Enter your ${field.label}`}
+            className={
+              field.type === 'date'
+                ? DateStyle.input
+                : field.type === 'text'
+                ? TextStyle.input
+                : FormStyle.input
+            }
+              type={field.type}
+              id={field.label}
+              placeholder={`Enter your ${field.label}`}
           />
         </div>
       ))}
 
-      <button className={FormComponent.submitButton} type="submit">
+      <button className={ButtonStyle.primary} type="submit">
         Submit
       </button>
     </form>

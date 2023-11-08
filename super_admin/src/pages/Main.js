@@ -1,11 +1,11 @@
 import React from 'react'
-import Table from '../components/design/table/Table';
+// import Table from '../components/design/table/Table';
 // import { Input } from '../components/design/input/Input';
 // import Form from '../components/design/forms/Form';
 // import Button from '../components/design/button/Button';
 // import ReadModal from '../components/design/modal/ReadModal';
 // import FormComponent from '../components/design/forms/FormComponent';
-// import Form from '../components/design/forms/Form';
+import Form from '../components/design/forms/Form';
 // import FormComponent from '../components/design/forms/FormComponent';
 // import Modal from '../components/design/modal2/Modal'
 
@@ -16,9 +16,9 @@ const Main = () => {
         {/* <Button />
         {/* <Form config={FormComponent} /> */}
         {/* <Input /> */}
-          {/* <Form /> */}
+          <Form />
           {/* <Modal /> */}
-          <Table /> 
+          {/* <Table />  */}
     </div>
  )
 }

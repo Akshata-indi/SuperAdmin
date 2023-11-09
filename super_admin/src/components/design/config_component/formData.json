@@ -2,37 +2,33 @@
     {
       "label": "First Name",
       "type": "text",
-      "textcss": "input1"
-      
-      
+      "textcss": "line"   
     },
     {
       "label": "Last Name",
       "type": "text",
-      "textcss": "input"
+      "textcss": "line"
     },
     {
       "label": "Email",
       "type": "email",
-      "textcss": "input"
-      
+      "textcss": "line"  
     },
     {
       "label": "Password",
       "type": "password",
-      "textcss": "input1"
+      "datecss": "date2"
       
     },
     {
       "label": "Phone Number",
       "type": "tel",
-      "textcss": "input1"
-      
+      "textcss": "box" 
     },
     {
       "label": "Date of Birth",
       "type": "date",
-      "textcss": "input1"
+      "datecss": "date1"
     }
   ]
   

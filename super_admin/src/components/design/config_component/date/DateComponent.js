@@ -1,11 +1,16 @@
 // src/components/DateComponent.js
 import React from 'react';
 
-const DateComponent = ({ label, value, onChange }) => {
+const DateComponent = ({ label, value, onChange, datecss }) => {
   return (
     <div>
       <label>{label}</label>
-      <input type="date" value={value} onChange={onChange} />
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        className={datecss}
+      />
     </div>
   );
 };

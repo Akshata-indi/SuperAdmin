@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import  formData from "./formData.json"
-import  TextComponent from "./TextComponent"
-import TextStyle from './TextStyle'
+import DateComponent from './date/DateComponent';
+import DateStyle from './date/DateStyle';
+import TextComponent from './text/TextComponent';
+import TextStyle from './text/TextStyle';
 
 const FormComponent = () => {
     const [values, setValues] = useState({});
@@ -39,11 +41,11 @@ const FormComponent = () => {
               />
             )}
             {field.type === "password" && (
-              <TextComponent
+              <DateComponent
                 label={field.label}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
-                textcss={TextStyle[field.textcss]}
+                datecss={DateStyle[field.datecss]}
               />
             )}
             {field.type === "tel" && (

@@ -1,0 +1,15 @@
+[
+    {
+      "name": "submitButton",
+      "label": "Submit",
+      "type": "button",
+      "buttoncss": "Primary"  
+    },
+    {
+      "name": "resetButton",
+      "label": "Reset",
+      "type": "button",
+      "buttoncss": "Secondary"
+    }
+]
+  

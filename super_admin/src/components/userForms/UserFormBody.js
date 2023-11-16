@@ -44,8 +44,7 @@ const UserFormBody = () => {
                                 </Link>
                             ))}
                         </nav>
-                        
-                    </div>
+                 </div>
                 </div>
                 <div className='basis-[78%]  shadow-sm h-[10vh] border  '>
                     <h1 className='mx-8 my-5'> Applications/Users</h1>

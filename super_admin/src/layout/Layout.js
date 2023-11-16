@@ -1,10 +1,10 @@
 import React from 'react'
-import Header3 from '../components/Header/Header3'
+import Header from '../components/Header/Header'
 
 const Layout = () => {
   return (
     <div>
-        <Header3/>
+        <Header/>
     </div>
   )
 }

@@ -1,10 +1,9 @@
-import UserForm from "./components/userForms/UserForm";
-import Form from "./components/forms/Form";
-
+import Layout from "./layout/Layout"
 function App() {
   return (
     <div>
-      <Form/>
+      {/* <Form/> */}
+      <Layout/>
     </div>
   );
 }

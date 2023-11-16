@@ -1,13 +1,17 @@
-import React from 'react'
+// Header1.js
+import React from 'react';
 
-const Header = () => {
-    return (
-        <div>
-        <div className='flex items-center justify-between text-white bg-gray-600 p-4'>
-            Header
-        </div>
+const Header1 = ({ componentMap, jsonData }) => {
+  const { componentNames } = jsonData;
+
+  return (
+    <div className="flex justify-between p-4 bg-gray-200">
+      {componentNames.map((componentName, index) => {
+        const Component = componentMap[componentName];
+        return Component ? <Component key={index} /> : null;
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header1;

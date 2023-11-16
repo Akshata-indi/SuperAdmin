@@ -2,33 +2,70 @@
     {
       "label": "First Name",
       "type": "text",
-      "textcss": "line"   
+      "placeholder": "First Name",
+      "textcss": "standard"   
     },
     {
       "label": "Last Name",
       "type": "text",
-      "textcss": "line"
+      "textcss": "standard"
     },
     {
       "label": "Email",
       "type": "email",
-      "textcss": "line"  
+      "textcss": "standard"  
     },
     {
       "label": "Password",
       "type": "password",
-      "datecss": "date2"
-      
+      "textcss": "standard" 
     },
     {
       "label": "Phone Number",
       "type": "tel",
-      "textcss": "box" 
+      "textcss": "standard" 
+    },
+  
+    {
+      "label": "Checkbox Field",
+      "type": "checkbox",
+      "textcss": "standard" 
     },
     {
-      "label": "Date of Birth",
+      "label": "Radio Field",
+      "type": "radio",
+      "value": "radioOption1",
+      "textcss": "standard" 
+    },
+    {
+      "label": "Date Field",
       "type": "date",
-      "datecss": "date1"
+      "textcss": "standard" 
+    },
+    {
+      "label": "Time Field",
+      "type": "time",
+      "textcss": "standard" 
+    },
+    {
+      "label": "File Field",
+      "type": "file",
+      "textcss": "standard" 
+    },
+    {
+      "label": "Options Field",
+      "type": "options",
+      "options": [
+        {"label": "Option 1", "value": "option1"},
+        {"label": "Option 2", "value": "option2"},
+        {"label": "Option 3", "value": "option3"}
+      ],
+      "textcss": "standard" 
+    },
+    {
+      "label": "Textarea Field",
+      "type": "textarea",
+      "textcss": "standard" 
     }
   ]
   

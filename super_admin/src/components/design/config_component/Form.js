@@ -6,11 +6,12 @@ const Form = () => {
   return (
     <div>
         
-      <h1>Form</h1>
-      <FormComponent config={formData} />
+      <h1>Form components</h1>
+        <FormComponent config={formData} />
     
     </div>
   )
   }
 
 export default Form;
+

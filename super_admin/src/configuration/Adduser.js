@@ -87,7 +87,7 @@ const Adduser = ({ isOpen, onRequestClose, onSave }) => {
               </div>
               <div className="my-20">
                 <button
-                  className={`bg-blue-500 hover-bg-blue-700 text-black font-bold py-2 px-4 rounded ${TwdButtonsConfig.hover}`}
+                  className={` ${TwdButtonsConfig.hover}`}
                   type="button"
                   onClick={handleSave}
                 >

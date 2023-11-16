@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="bg-white basis-[4%]">
+    <div className="bg-white ">
       <div className='my-4 mx-4'>
         <ul>
           {DASHBOARD_SIDEBAR_LINKS.links.map((links) => (

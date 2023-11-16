@@ -19,53 +19,6 @@
       "label": "Password",
       "type": "password",
       "textcss": "standard" 
-    },
-    {
-      "label": "Phone Number",
-      "type": "tel",
-      "textcss": "standard" 
-    },
-  
-    {
-      "label": "Checkbox Field",
-      "type": "checkbox",
-      "textcss": "standard" 
-    },
-    {
-      "label": "Radio Field",
-      "type": "radio",
-      "value": "radioOption1",
-      "textcss": "standard" 
-    },
-    {
-      "label": "Date Field",
-      "type": "date",
-      "textcss": "standard" 
-    },
-    {
-      "label": "Time Field",
-      "type": "time",
-      "textcss": "standard" 
-    },
-    {
-      "label": "File Field",
-      "type": "file",
-      "textcss": "standard" 
-    },
-    {
-      "label": "Options Field",
-      "type": "options",
-      "options": [
-        {"label": "Option 1", "value": "option1"},
-        {"label": "Option 2", "value": "option2"},
-        {"label": "Option 3", "value": "option3"}
-      ],
-      "textcss": "standard" 
-    },
-    {
-      "label": "Textarea Field",
-      "type": "textarea",
-      "textcss": "standard" 
     }
   ]
   

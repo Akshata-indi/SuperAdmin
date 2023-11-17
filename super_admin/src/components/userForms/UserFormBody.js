@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import LogoConfig from '../../configuration/LogoConfig';
-import Form from '../../configuration/Form';
+// import Form from '../../configuration/Form';
+// import TableComponent from '../design/config_component/tables/TableComponent';
 import Sidebar from '../../configuration/Sidebar';
 import { DASHBOARD_SIDEBAR_LINKS } from './UserFormConfig';
 import { Link } from 'react-router-dom';
+import TableComponent from '../design/config_component/tables/TableComponent';
 
 const UserFormBody = () => {
     const [isFormVisible, setIsFormVisible] = useState(false);
@@ -48,7 +50,7 @@ const UserFormBody = () => {
                 </div>
                 <div className='basis-[78%]  shadow-sm h-[10vh] border  '>
                     <h1 className='mx-8 my-5'> Applications/Users</h1>
-                    {isFormVisible && <Form />}
+                    {isFormVisible && <TableComponent />}
                 </div>
             </div>
         </div>

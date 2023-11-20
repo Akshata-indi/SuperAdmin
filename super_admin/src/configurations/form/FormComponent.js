@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import  formData from "./formData.json"
-import DateComponent from './date/DateComponent';
+import DateComponent from '../../ui-configs/date/DateComponent';
 // import DateStyle from './date/DateStyle';
-import TextComponent from './text/TextComponent';
-import TextStyle from './text/TextStyle';
-import CheckboxComponent from './checkbox/CheckboxComponent';
-import EmailComponent from './email/EmailComponent';
-import FileComponent from './file/FileComponent';
-import OptionsComponent from './options/OptionsComponent';
-import PasswordComponent from './password/PasswordComponent';
-import RadioComponent from './radio_button/RadioComponent';
-import TextareaComponent from './textarea/TextareaComponent';
-import TimeComponent from './time/TimeComponent';
+import TextComponent from '../../ui-configs/text/TextComponent';
+import TextStyle from '../../ui-configs/text/TextStyle';
+import CheckboxComponent from '../../ui-configs/checkbox/CheckboxComponent';
+import EmailComponent from '../../ui-configs/email/EmailComponent';
+import FileComponent from '../../ui-configs/file/FileComponent';
+import OptionsComponent from '../../ui-configs/options/OptionsComponent';
+import PasswordComponent from '../../ui-configs/password/PasswordComponent';
+import RadioComponent from '../../ui-configs/radio_button/RadioComponent';
+import TextareaComponent from '../../ui-configs/textarea/TextareaComponent';
+import TimeComponent from '../../ui-configs/time/TimeComponent';
 
 
 const FormComponent = () => {

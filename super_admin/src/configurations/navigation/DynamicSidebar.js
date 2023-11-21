@@ -1,9 +1,9 @@
 import React from 'react'
-import Menu from './Menu';
+// import Menu from './Menu.json'
 import { Link } from 'react-router-dom';
 import Style from './Style';
 
-const DynamicSidebar = () => {   
+const DynamicSidebar = ({menuConfig}) => {   
   return (
    
       // <div className=' basis-[10%] h-[100vh] border border-gray-600 '>
@@ -11,7 +11,7 @@ const DynamicSidebar = () => {
        
        <nav>
           <ul>
-            {Menu.submenus.map((submenu, index) => (
+            {menuConfig.menus.map((submenu, index) => (
               <li key={index}>
                 <Link to={submenu.url} className={Style[submenu.cssClass]}>
                   {submenu.label}

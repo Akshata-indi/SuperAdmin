@@ -4,27 +4,28 @@ import TableStyle from './TableStyle.json'
 
 function DynamicTable({ data }) {
   return (
-    <table className="">
-      <thead>
-        <tr>
+    <table >
+      <thead >
+        <tr >
           {ColumnsConfig.map((column) => (
             <th key={column.name} className={TableStyle[column.cssClass]}>
-              {column.label}
+              {column.label}               
             </th>
           ))}
         </tr>
       </thead>
-      <tbody>
+      {/* <tbody>
         {data.map((row, rowIndex) => (      
-          <tr key={rowIndex}>
+          // <tr key={rowIndex} className={TableStyle.style3}>
+          <tr key={rowIndex} >
             {ColumnsConfig.map((column) => (
               <td key={column.name} className={TableStyle[column.cssClass]}>
-                {column.dataType === 'number' ? parseFloat(row[column.name]).toFixed(2) : row[column.name]}
+                {column.dataType === 'number' ? parseFloat(row[column.name]).toFixed() : row[column.name]}
               </td>
             ))}
           </tr>
         ))}
-      </tbody>
+      </tbody> */}
     </table>
   );
 }

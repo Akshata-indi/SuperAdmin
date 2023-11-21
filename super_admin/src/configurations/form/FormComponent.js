@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  formData from "./formData.json"
+
 import DateComponent from '../../ui-configs/date/DateComponent';
 // import DateStyle from './date/DateStyle';
 import TextComponent from '../../ui-configs/text/TextComponent';
@@ -14,7 +14,9 @@ import TextareaComponent from '../../ui-configs/textarea/TextareaComponent';
 import TimeComponent from '../../ui-configs/time/TimeComponent';
 
 
-const FormComponent = () => {
+const FormComponent = ({config}) => {
+
+  
     const [values, setValues] = useState({});
   
     const handleChange = (name, value) => {
@@ -23,7 +25,7 @@ const FormComponent = () => {
   
     return (
       <form>
-        {formData.map((field, index) => (
+        {config.map((field, index) => (
           <div key={index}>
             {field.type === "text" && (
               <TextComponent
@@ -68,7 +70,7 @@ const FormComponent = () => {
             {field.type === 'checkbox' && (
               <CheckboxComponent
                 label={field.label}
-                checked={formData[field.label] || false}
+                checked={config[field.label] || false}
                 onChange={(e) => handleChange(field.label, e.target.checked)}
                 textcss={TextStyle[field.textcss]}
               />
@@ -76,8 +78,8 @@ const FormComponent = () => {
             {field.type === 'radio' && (
               <RadioComponent
                 label={field.label}
-                value={field.value}  // Replace 'value' with the correct property name from your formData
-                checked={formData[field.label] === field.value}
+                value={field.value}  // Replace 'value' with the correct property name from your config
+                checked={config[field.label] === field.value}
                 onChange={() => handleChange(field.label, field.value)}
                 textcss={TextStyle[field.textcss]}
                />
@@ -86,8 +88,8 @@ const FormComponent = () => {
             {field.type === 'options' && (
               <OptionsComponent
                 label={field.label}
-                value={formData[field.label] || ''}
-                options={field.options}  // Replace 'options' with the correct property name from your formData
+                value={config[field.label] || ''}
+                options={field.options}  // Replace 'options' with the correct property name from your config
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
               />
@@ -96,7 +98,7 @@ const FormComponent = () => {
             {field.type === 'time' && (
               <TimeComponent
                 label={field.label}
-                value={formData[field.label] || ''}
+                value={config[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
               />
@@ -112,7 +114,7 @@ const FormComponent = () => {
             {field.type === 'textarea' && (
               <TextareaComponent
                 label={field.label}
-                value={formData[field.label] || ''}
+                value={config[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
 

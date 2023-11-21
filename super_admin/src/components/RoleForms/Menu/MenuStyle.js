@@ -1,5 +1,5 @@
 
-const Style =  {
+const MenuStyle =  {
 
     style1 : "hover:text-blue-500 font-normal mx-8 text-red-800",
     
@@ -11,6 +11,4 @@ const Style =  {
 }
 
 
-export default Style;
-
-
+export default MenuStyle;

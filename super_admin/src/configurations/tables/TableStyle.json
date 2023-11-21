@@ -1,7 +1,11 @@
 
     {
-        "style": "border divide-y border-b-2 w-50%  bg-gray-300 whitespace-nowrap",
-        "style1": "border w-50 border px-4 px-2 bg-blue-300",
-        "style2": "border divide-y divide-x divide-gray-200 border-red-500 w-50% "
+        "style": "border divide-y border-b-2 w-50%  bg-gray-300 whitespace-nowrap", 
+        "style1": "w-80% text-center px-6 bg-gray-200 border-t ",
+        "style2": "border divide-y divide-x divide-gray-200 border-red-500 w-50% ",
+        "style4": "text-center text-md text-gray-700 border bg-gray-300  ",
+        "style5": "bg-blue-300 border-b text-center w-50  px-4",
+        "style3": "bg-blue-300 border-b text-center px-6 border-separate border-spacing-2   "
     }
 
+ 

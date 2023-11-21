@@ -1,7 +1,8 @@
 [
     {
     "id": 1, 
-    "name": "Home"
+    "name": "Home",
+    "menucss": "style1"
  },
     {
     "id": 2, 

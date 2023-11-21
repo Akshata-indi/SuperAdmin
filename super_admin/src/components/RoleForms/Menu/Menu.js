@@ -1,12 +1,12 @@
 import React from 'react';
-import menuData from './menuData'; // Import the JSON file
+import MenuStyle from './MenuStyle'
 
-const Menu = () => {
+const Menu = ({config}) => {
   return (
     <div className="menu-container">
       <ul className="menu-list">
-        {menuItems.map(item => (
-          <li key={item.id} className="menu-item">
+        {config.map(item => (
+          <li key={item.id} className={MenuStyle[item.menucss]}>
             {item.name}
           </li>
         ))}

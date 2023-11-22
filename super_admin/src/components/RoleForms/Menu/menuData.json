@@ -2,19 +2,26 @@
     {
     "id": 1, 
     "name": "Home",
+    "link": "#home",
     "menucss": "style1"
  },
     {
     "id": 2, 
-    "name": "About"
+    "name": "About",
+    "link": "#about",
+    "menucss": "style1"
  },
     {
     "id": 3, 
-    "name": "Services" 
+    "name": "Services" ,
+    "link": "#services",
+    "menucss": "style1"
 },
     { 
     "id": 4,
-     "name": "Contact" 
+     "name": "Contact" ,
+     "link": "#contact",
+     "menucss": "style1"
     }
   ]
   

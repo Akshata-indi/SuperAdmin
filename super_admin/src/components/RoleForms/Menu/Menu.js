@@ -1,16 +1,10 @@
 import React from 'react';
-import MenuStyle from './MenuStyle'
+import MenuComponent from './MenuComponent';
 
-const Menu = ({config}) => {
+const Menu = ({configs}) => {
   return (
-    <div className="menu-container">
-      <ul className="menu-list">
-        {config.map(item => (
-          <li key={item.id} className={MenuStyle[item.menucss]}>
-            {item.name}
-          </li>
-        ))}
-      </ul>
+    <div>
+     <MenuComponent config={configs}/>
     </div>
   );
 };

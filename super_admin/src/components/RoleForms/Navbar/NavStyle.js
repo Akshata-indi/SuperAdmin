@@ -1,7 +1,7 @@
 
 const NavStyle =  {
 
-    style1 : "hover:text-blue-500 font-normal mx-8 text-black-800",
+    style1 : "hover:text-blue-500 font-normal mx-8 p-2 black-800",
     
     style2 : "text-blue-800 hover:text-red-500 font-normal mx-10 ",
     

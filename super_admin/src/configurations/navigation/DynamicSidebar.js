@@ -11,7 +11,7 @@ const DynamicSidebar = ({menuConfig}) => {
        
        <nav>
           <ul>
-            {menuConfig.menus.map((submenu, index) => (
+            {menuConfig.map((submenu, index) => (
               <li key={index}>
                 <Link to={submenu.url} className={Style[submenu.cssClass]}>
                   {submenu.label}
@@ -19,6 +19,7 @@ const DynamicSidebar = ({menuConfig}) => {
               </li>
             ))}
           </ul>
+          
         </nav>
          {/* </div> */}
         </div>

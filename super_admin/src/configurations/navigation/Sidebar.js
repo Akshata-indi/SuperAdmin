@@ -2,27 +2,30 @@ import React from 'react'
 import DynamicSidebar from './DynamicSidebar'
 
 const Sidebar = ({menuConfigs}) => {
+  
   return (
     <>
     <DynamicSidebar menuConfig={menuConfigs} />
+
+    
     </>
   )
 }
 
 export default Sidebar
 
-import DynamicSidebar from './DynamicSidebar';
+
 // import { Router } from 'react-router-dom';
 
 
- const Sidebar = () => {
-  return (
-    <div>
-        {/* <Router> */}
-        <DynamicSidebar />
-        {/* </Router> */}
-    </div>
-  )
-}
+//  const Sidebar = () => {
+//   return (
+//     <div>
+//         {/* <Router> */}
+//         <DynamicSidebar />
+//         {/* </Router> */}
+//     </div>
+//   )
+// }
 
-export default Sidebar;
+// export default Sidebar;

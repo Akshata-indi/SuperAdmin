@@ -5,6 +5,8 @@ import Menu from '../Menu/Menu';
 import Nav from '../Navbar/Nav';
 import rolemenuData from './rolemenuData.json'
 import rolenavData from './rolenavdata.json'
+import Button from '../../../ui-configs/Buttons/Button';
+import buttonData from './buttonData.json'
 
 const BodyComponent = () => {
   const handleButtonClick = () => {
@@ -20,9 +22,8 @@ const BodyComponent = () => {
         <h3 className="text-xl font-sans">Roles</h3>
 
         {/* Button on the top right */}
-        <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded" onClick={handleButtonClick}>
-          Create New Role
-        </button>
+        <Button configs={buttonData} onClick={handleButtonClick}/> 
+        
       </div>
 
       {/* Main container */}

@@ -1,15 +1,22 @@
 import React from 'react';
-import { TiHome } from 'react-icons/ti';
+// import { TiHome } from 'react-icons/ti';
 import { PiUsersThreeFill } from 'react-icons/pi';
-import { RiApps2Fill, RiSettings4Fill, RiLogoutBoxFill } from 'react-icons/ri';
-import { GoBellFill } from "react-icons/go";
+import { RiApps2Fill, RiSettings3Fill , RiLogoutBoxFill } from 'react-icons/ri';
+import { TbBellFilled  } from "react-icons/tb";
 import IconbarStyle from './IconbarStyle';
+import { MdHome } from "react-icons/md";
+import logo from './logo.png'
 
 export const DASHBOARD_SIDEBAR_LINKS ={ 
     links: [
     {
+      key: 'logo',
+      icon: <img src={logo} alt="Logo" className={` ${IconbarStyle.LogoStyle}`} />, 
+      path: '/',
+    },
+    {
         key: 'home',
-        icon: <TiHome className = {IconbarStyle.Style1} />,
+        icon: <MdHome   className = {IconbarStyle.Style1} />,
         path: '/home'
         
     },
@@ -25,13 +32,13 @@ export const DASHBOARD_SIDEBAR_LINKS ={
     },
     {
         key: 'settings',
-        icon: <RiSettings4Fill className = {IconbarStyle.Style1} />,
+        icon: <RiSettings3Fill  className = {IconbarStyle.Style1} />,
         path: '/settings'
         
     },
     {
         key: 'notifications',
-        icon: <GoBellFill className = {IconbarStyle.Style2}/>,
+        icon: <TbBellFilled  className = {IconbarStyle.Style2}/>,
         path: '/notifications'
     },
     {

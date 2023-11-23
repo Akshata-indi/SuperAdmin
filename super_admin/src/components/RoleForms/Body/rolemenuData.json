@@ -1,0 +1,15 @@
+[
+    {
+    "id": 1, 
+    "name": "Role 1",
+    "link": "#Role 1",
+    "menucss": "style1"
+ },
+    {
+    "id": 2, 
+    "name": "Role 2",
+    "link": "#Role 2",
+    "menucss": "style1"
+ }
+  ]
+  

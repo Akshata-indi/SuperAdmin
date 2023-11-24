@@ -1,23 +1,20 @@
 import React from 'react';
-import NavComponent from './Navbar/NavComponent';
+import Nav from './Navbar/Nav';
+import Menu from './Menu/Menu';
+import navData from './Navbar/navData.json';
+import menuData from './Menu/menuData.json';
 
-import Sidebar from '../../configurations/navigation/Sidebar';
-
-const config = {
-  showNav: true,
-  showSidebar: true,
-  showHeader: true,
-  showDropdown: true,
-};
-const RoleForm = ({ config }) => {
-  const { showNav, showSidebar, showHeader, showDropdown } = config;
-
+const RoleForm = ({ configs }) => {
   return (
-    <div className="main-container">
-      {showNav && <NavComponent />}
-      {showSidebar && <Sidebar />}
-      {/* {showHeader && <Header />}
-      {showDropdown && <Dropdown />} */}
+    <div className="flex justify-center items-center h-screen">
+      <div className="main-container bg-gray-200 rounded-lg">
+     <span>
+        <Menu configs={menuData} />
+        </span>
+        <span>
+        <Nav configs={navData} />
+        </span>
+      </div>
     </div>
   );
 };

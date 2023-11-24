@@ -19,6 +19,7 @@ const DynamicSidebar = ({menuConfig}) => {
               </li>
             ))}
           </ul>
+          
         </nav>
          {/* </div> */}
         </div>

@@ -12,7 +12,9 @@ const Sidebar = ({menuConfigs}) => {
   )
 }
 
+
 export default Sidebar
+
 
 
 // import { Router } from 'react-router-dom';
@@ -29,3 +31,4 @@ export default Sidebar
 // }
 
 // export default Sidebar;
+

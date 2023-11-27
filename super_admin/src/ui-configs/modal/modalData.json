@@ -1,0 +1,18 @@
+[
+    {
+      "id": "modal",
+      "title": "Modal",
+      "content": "This is the content of Modal",
+    
+
+      "openButton": " + Create new Role",
+
+
+      "buttons": {
+        "create": "Create",
+        "cancel": "Cancel"
+      }
+      
+    }
+  ]
+  

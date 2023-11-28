@@ -2,6 +2,7 @@
   
     {
       "label": "Users",
+      "url" : "users",
       "cssClass": "style1"
     },
     

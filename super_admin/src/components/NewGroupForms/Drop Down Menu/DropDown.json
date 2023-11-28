@@ -4,6 +4,7 @@
     "name": "Select apps to add to the group",
     "isDisabled": true
   },
+  
   {
     "id": 2,
     "name": "Add App",

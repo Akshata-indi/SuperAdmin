@@ -12,9 +12,9 @@ const DynamicSearch = ({ data, searchKey, config }) => {
     setSearchTerm(e.target.value);
   };
 
-  const filteredData = data.filter((item) =>
-    item[searchKey].toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // const filteredData = data.filter((item) =>
+  //   item[searchKey].toLowerCase().includes(searchTerm.toLowerCase())
+  // );
 
   return (
     <div>
@@ -29,13 +29,13 @@ const DynamicSearch = ({ data, searchKey, config }) => {
       
       />
 
-      <ul>
+      {/* <ul>
         {filteredData.map((item) => (
           <li key={item.id}>
             {item[searchKey]}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

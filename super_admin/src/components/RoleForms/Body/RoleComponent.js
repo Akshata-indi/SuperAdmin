@@ -21,7 +21,7 @@ const RoleComponent = () => {
         <h3 className="text-xl font-sans text-gray-600">2 Roles</h3>
 
         {/* Button on the top right */}
-        <Modal Config={modalData}/>
+        <Modal Configs={modalData}/>
         
       </div>
 

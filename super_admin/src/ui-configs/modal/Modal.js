@@ -1,9 +1,9 @@
 //Modal.js
 import React, { useState } from 'react';
 import ModalComponent from './ModalComponent';
-import modalData from './modalData.json';
 
-const Modal = () => {
+
+const Modal = ({Configs}) => {
   const [openModal, setOpenModal] = useState(null);
 
   const closeModal = () => {
@@ -12,7 +12,7 @@ const Modal = () => {
 
   return (
     <div className="App">
-      {modalData.map((modal) => (
+      {Configs.map((modal) => (
         <button
           key={modal.id}
           className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
@@ -22,7 +22,7 @@ const Modal = () => {
         </button>
       ))}
 
-      {modalData.map((modal) => (
+      {Configs.map((modal) => (
         <ModalComponent
           key={modal.id}
           isOpen={openModal === modal}

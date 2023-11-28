@@ -1,11 +1,10 @@
 // ModalComponent.js
 import React from 'react';
-import { modalStyles } from './ModalStyle';
+import modalStyles from './ModalStyle'; // Import the styles
 
 const ModalComponent = ({ isOpen, onClose, config, onCreate }) => {
-  const { overlay, overlayBackground, container, title, content, button, cancelButton } = modalStyles;
+  const { overlay, overlayBackground, container, title, content, createbutton, cancelButton } = modalStyles[config.modalcss];
 
-  // Check if buttons are defined in config, otherwise use default names
   const createButtonName = config.buttons && config.buttons.create ? config.buttons.create : 'Create';
   const cancelButtonName = config.buttons && config.buttons.cancel ? config.buttons.cancel : 'Cancel';
 
@@ -24,7 +23,8 @@ const ModalComponent = ({ isOpen, onClose, config, onCreate }) => {
               <button className={cancelButton} onClick={onClose}>
                 {cancelButtonName}
               </button>
-              <button className={button} onClick={onCreate}>
+
+              <button className={createbutton} onClick={onCreate}>
                 {createButtonName}
               </button>
             </div>

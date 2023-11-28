@@ -11,7 +11,9 @@
       "buttons": {
         "create": "Create",
         "cancel": "Cancel"
-      }
+      },
+
+      "modalcss": "style1"
       
     }
   ]

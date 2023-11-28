@@ -2,20 +2,20 @@
     {
           "id": 1,
           "name": "Apps", 
-          "link": "#Apps",
-          "navcss": "style1"
+          "link": "Apps",
+          "navcss": "style5"
     },
     { 
         "id": 2, 
         "name": "User", 
-        "link": "#User",
-        "navcss": "style1"
+        "link": "User",
+        "navcss": "style5"
     },
     { 
         "id": 3, 
         "name": "Permissions", 
-        "link": "#Permissions",
-        "navcss": "style1"
+        "link": "Permissions",
+        "navcss": "style5"
     }
   ]
   

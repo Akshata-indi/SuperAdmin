@@ -1,6 +1,6 @@
 import React from 'react'
 // import Menu from './Menu.json'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Style from './Style';
 
 const DynamicSidebar = ({menuConfig}) => {   
@@ -12,10 +12,10 @@ const DynamicSidebar = ({menuConfig}) => {
        <nav>
           <ul>
             {menuConfig.map((submenu, index) => (
-              <li key={index}>
-                <Link to={submenu.url} className={Style[submenu.cssClass]}>
+              <li key={index} >
+                <NavLink to={submenu.path} className={Style[submenu.cssClass]}>
                   {submenu.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

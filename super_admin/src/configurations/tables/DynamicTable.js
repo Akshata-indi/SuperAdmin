@@ -1,31 +1,31 @@
 import React from 'react';
-import ColumnsConfig from './ColumnsConfig'; 
-import TableStyle from './TableStyle.json'
+// import ColumnContent from './ColumnContent.json'
+import TableStyle from './TableStyle'
 
-function DynamicTable({ data }) {
+function DynamicTable({ config }) {
   return (
-    <table >
+    <table className='' >
       <thead >
         <tr >
-          {ColumnsConfig.map((column) => (
+          {config.map((column) => (
             <th key={column.name} className={TableStyle[column.cssClass]}>
               {column.label}               
             </th>
           ))}
         </tr>
       </thead>
-      {/* <tbody>
-        {data.map((row, rowIndex) => (      
+      <tbody>
+        {/* {data.map((row, rowIndex) => (      
           // <tr key={rowIndex} className={TableStyle.style3}>
           <tr key={rowIndex} >
-            {ColumnsConfig.map((column) => (
+            {ColumnContent.map((column) => (
               <td key={column.name} className={TableStyle[column.cssClass]}>
                 {column.dataType === 'number' ? parseFloat(row[column.name]).toFixed() : row[column.name]}
               </td>
             ))}
           </tr>
-        ))}
-      </tbody> */}
+        ))} */}
+      </tbody>
     </table>
   );
 }

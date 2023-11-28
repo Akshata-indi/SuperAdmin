@@ -12,11 +12,11 @@ import DynamicTable from './DynamicTable';
 
 
 
-function TableComponent() {
+function TableComponent({tableConfig}) {
   return (
     <div>
       
-      <DynamicTable   />
+      <DynamicTable config= {tableConfig} />
     </div>
   );
 }

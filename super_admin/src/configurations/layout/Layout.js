@@ -17,7 +17,7 @@ const Layout = () => {
   return (
     <>
     <div className=" flex ">
-      <div className="border-r border-black">
+      <div className="border-r border-gray-400">
         <Iconbar />
       </div>
       <div>
@@ -25,10 +25,10 @@ const Layout = () => {
         <Header />
       </div>
     
-      <div className='  flex w-[1467px] h-[690px] bg-white bg-green-500 border-r'>
-       
+      <div className='  flex w-[1467px] h-[690px] border-r border-gray-400'>
 
      <Routes>{renderRoutes(routesConfig)}</Routes>
+     
       </div>
     
       </div>

@@ -1,29 +1,38 @@
-// Modal.js
-import React from 'react';
+//Modal.js
+import React, { useState } from 'react';
+import ModalComponent from './ModalComponent';
+import modalData from './modalData.json';
 
-const Modal = ({ isOpen, onClose, config }) => {
+const Modal = () => {
+  const [openModal, setOpenModal] = useState(null);
+
+  const closeModal = () => {
+    setOpenModal(null);
+  };
+
   return (
-    <div>
-      {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
-          {/* Semi-transparent overlay for background */}
-          <div className="modal-overlay fixed inset-0 bg-black opacity-50"></div>
+    <div className="App">
+      {modalData.map((modal) => (
+        <button
+          key={modal.id}
+          className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
+          onClick={() => setOpenModal(modal)}
+        >
+          {modal.openButton}
+        </button>
+      ))}
 
-          {/* Modal container */}
-          <div className="modal-container bg-white p-10 rounded-lg shadow-md relative z-10">
-            <h2 className="text-xl font-semibold mb-2">{config.title}</h2>
-            <p className="text-gray-600">{config.content}</p>
-            <div className="mt-4 flex justify-end">
-              <button
-                className="px-3 py-1 text-white bg-blue-700 rounded-md hover:bg-blue-800"
-                onClick={onClose}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {modalData.map((modal) => (
+        <ModalComponent
+          key={modal.id}
+          isOpen={openModal === modal}
+          onClose={closeModal}
+          onCreate={() => {
+            // Define your create logic here for the modal
+          }}
+          config={modal}
+        />
+      ))}
     </div>
   );
 };

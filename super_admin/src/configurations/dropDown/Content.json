@@ -1,0 +1,16 @@
+[
+    
+    { 
+        "label": "Admin", 
+        "value": "admin" 
+    },
+    { 
+        "label": "All Users", 
+        "value": "allUsers"
+     },
+     { 
+        "label": "All Users", 
+        "value": "allUsers"
+     }
+ 
+]

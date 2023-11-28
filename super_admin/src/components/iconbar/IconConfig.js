@@ -1,9 +1,4 @@
-import {
-   
-    BiBell,
-    BiLogOut
-
-} from 'react-icons/bi'
+import { BiBell, BiLogOut } from 'react-icons/bi'
 import { GoHomeFill } from "react-icons/go";
 import { MdGroups } from "react-icons/md";
 import { RiApps2Fill } from "react-icons/ri";

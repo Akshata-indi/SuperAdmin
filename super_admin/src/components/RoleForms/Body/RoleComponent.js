@@ -19,7 +19,7 @@ const RoleComponent = () => {
   };
 
   return (
-      <div className='basis-[100%] my-8'>
+      <div className='basis-[100%]'>
 
           <div className='main-container pt-10 '>
 

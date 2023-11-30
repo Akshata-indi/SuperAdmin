@@ -2,16 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import NavStyle from './NavStyle.js';
 
-const NavComponent = ({ config, handleNavClick }) => {
+const NavComponent = ({ config, handleNavClick, activeItem }) => {
   return (
     <nav className="navbar">
       <ul className="nav-menu flex list-none">
         {config.map(item => (
           <li
             key={item.id}
-            className={`${NavStyle[item.navcss]} ${item.name === handleNavClick ? 'NavStyle.activeStyle' : ''}`}
+            className={`${NavStyle[item.navcss]} ${item.name === activeItem ? NavStyle.activeStyle : ''}`}
           >
-            <Link to={item.link} onClick={() => handleNavClick(item.name)}>{item.name}</Link>
+            <button onClick={() => handleNavClick(item.name)}>{item.name}</button>
           </li>
         ))}
       </ul>
@@ -20,3 +20,4 @@ const NavComponent = ({ config, handleNavClick }) => {
 };
 
 export default NavComponent;
+

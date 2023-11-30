@@ -1,10 +1,16 @@
 [
     {
-        "name": "add users",
-        "label": "Add Users",
+        "name": "",
+        "label": "Invite with Email",
         "type": "button",
-        "buttoncss": "Primary",
-        "onClick":"openAddUserModal"
+        "buttoncss": "hover"
+        
+    },
+    {
+        "name": "",
+        "label": "Upload Csv file",
+        "type": "button",
+        "buttoncss": "hover"
+        
     }
-   
 ]

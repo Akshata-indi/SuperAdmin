@@ -77,17 +77,17 @@ const Form = () => {
             <div className="flex items-center justify-center  ">
                 <form className="bg-white border border-gray-200  shadow-md rounded">
                     <div className=' bg-gray-100 shadow-md h-[8vh]   '>
-                      
+
                         <div className='flex justify-start '>
                             {/* <div className='flex justify-start'> */}
                             <CustomDropdown items={dropDownData} />
-                           
+
                             <div className='flex justify-end ml-52'>
-                            {/* <DropDownContent /> */}
-                            <SearchableComp SearchConfig= {SearchInputConfig} />
+                                {/* <DropDownContent /> */}
+                                <SearchableComp SearchConfig={SearchInputConfig} />
+                            </div>
                         </div>
-                        </div>
-                        
+
                     </div>
                     <div className="mt-4 ">
                         <TableComponent tableConfig={TableContent} />

@@ -16,23 +16,23 @@ export const DASHBOARD_SIDEBAR_LINKS ={
     },
     {
         key: 'home',
-        icon: <MdHome   className = {IconbarStyle.Style1} />,
+        icon: <MdHome   className = {IconbarStyle.style1} />,
         path: '/home'
         
     },
     {
         key: 'users',
-        icon: <PiUsersThreeFill className = {IconbarStyle.Style1}/>, 
+        icon: <PiUsersThreeFill className = {IconbarStyle.style1}/>, 
         path: '/users'
     },
     {
         key: 'apps',
-        icon: <RiApps2Fill className = {IconbarStyle.Style1}/>,
+        icon: <RiApps2Fill className = {IconbarStyle.style1}/>,
         path: '/apps'
     },
     {
         key: 'settings',
-        icon: <RiSettings3Fill  className = {IconbarStyle.Style1} />,
+        icon: <RiSettings3Fill  className = {IconbarStyle.style1} />,
         path: '/settings'
         
     },

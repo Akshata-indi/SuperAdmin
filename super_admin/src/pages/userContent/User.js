@@ -1,4 +1,6 @@
 import BodyContent from '../../configurations/bodyContent/BodyContent'
+import TableWithData from '../../configurations/tables/TableWithData'
+import TrialComponent from './TrialComponent'
 import UserComponent from './UserComponent'
 
 import Skeleton from 'react-loading-skeleton'
@@ -11,7 +13,7 @@ const User = () => {
     <div>
       
       
-     <BodyContent content={UserComponent || <Skeleton/>} /> 
+     <BodyContent content={TableWithData} /> 
     
     </div>
   );

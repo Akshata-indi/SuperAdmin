@@ -2,7 +2,7 @@ import Iconbar from '../../components/Iconbar/Iconbar'
 // import SidebarMenu from "../configuration/sidebarMenus/SidebarMenu";
 
 import routesConfig from '../../routing/RoutingConfig'
-import Header from '../Header/Header2'
+import Header2 from '../../configurations/Header/Header2'
 
 import { Routes, Route } from 'react-router-dom'
 
@@ -22,7 +22,7 @@ const Layout = () => {
       </div>
       <div>
       <div>
-        <Header />
+        <Header2 />
       </div>
     
       <div className='  flex w-[1467px] h-[690px] border-r border-gray-400'>

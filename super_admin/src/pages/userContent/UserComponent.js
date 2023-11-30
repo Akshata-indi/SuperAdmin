@@ -4,16 +4,19 @@ import { getApiUrl } from '../../api/getApi/GetApi'
 import { USERS_API } from './UserConfig'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import Table from '../../configurations/tables/Table'
+import { tableContent } from './UserConfig'
 
 
-const User = () => {
+const UserComponent = () => {
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
   const fetchData = async () => {
     try {
       const response = await axios.get(getApiUrl(USERS_API));
-      // console.log(response.data)
+      console.log('API Response:', response.data);
+
       setData(response.data);
     } catch (error) {
       console.error(`Error fetching ${USERS_API} data:`, error);
@@ -31,16 +34,18 @@ const User = () => {
     <div>
       <h1>Users</h1>
       <ul>
-        {
+        {/* {
           isLoading ?
-            <Skeleton count={10} height={20} /> :
-            data.map(user => (
-              <li key={user.id}>{user.name}</li>))
-        }
+            <Skeleton count={10} height={20} /> 
+            :
+            // data.map(user => (
+            //   <li key={user.id}>{user.name}</li>))
+            <Table tableConfig={tableContent} data1={data}/>
+        } */}
       </ul>
 
     </div>
   );
 }
 
-export default User
+export default UserComponent

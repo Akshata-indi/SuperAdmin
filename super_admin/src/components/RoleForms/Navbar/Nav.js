@@ -2,10 +2,10 @@
 import React from 'react';
 import NavComponent from './NavComponent';
 
-const Nav = ({configs}) => {
+const Nav = ({ configs, handleNavClick }) => {
   return (
     <div>
-      <NavComponent config={configs}/>
+      <NavComponent config={configs} handleNavClick={handleNavClick} />
     </div>
   );
 };

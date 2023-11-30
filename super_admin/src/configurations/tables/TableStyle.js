@@ -13,6 +13,8 @@ const TableStyle = {
   style5: "bg-blue-300 border-b text-center w-50  px-4",
 
   style3: " px-16 text-black-600   ",
+
+  style6: "hover:text-blue-500 font-normal px-16 text-gray-500",
   }
 
   export default TableStyle;

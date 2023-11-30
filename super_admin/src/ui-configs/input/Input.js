@@ -1,12 +1,11 @@
 import React from 'react'
-import InputComponent from './InputComponent'
 
-export const Input = () => {
+import DynamicInput from './DynamicInput'
+
+export const Input = ({inputConfigs}) => {
   return (
     <div>
-        <input 
-        className={`${InputComponent.standard}`}
-        type="text" placeholder="Username"  />
+        <DynamicInput config={inputConfigs} />
     </div>
   )
 }

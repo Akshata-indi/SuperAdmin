@@ -6,7 +6,7 @@ const Example = [
 
         type: "text",
 
-        placeholder: "Enter Name",
+        placeholder: "Enter Full Name",
 
         inputcss: "boxInput1"
 
@@ -17,7 +17,18 @@ const Example = [
 
         type: "Email",
 
-        placeholder: "Enter Email",
+        placeholder: "Enter Email Id",
+
+        inputcss: "boxInput1"
+
+    },
+    {
+
+        label: "",
+
+        type: "text",
+
+        placeholder: "Select groups to add this user",
 
         inputcss: "boxInput1"
 

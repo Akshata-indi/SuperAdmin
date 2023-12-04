@@ -6,8 +6,8 @@ import dropDownData from '../NewGroupForms/Drop Down Menu/DropDown.json'
 import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 import SearchableComp from '../../configurations/search/SearchableComp'
 import TableComponent from '../../configurations/tables/TableComponent'
-import TableContent from '../../components/userForm/jsonFiles/TableContent.json'
-import TwdButtonsConfig from './TwdButtonsConfig';
+import { tableContent} from '../../configurations/tables/Tabledata'
+// import TwdButtonsConfig from './TwdButtonsConfig';
 // import DropDownContent from '../../configurations/dropDown/DropDownContent';
 // import Modal from '../../ui-configs/Modal/Modal';
 import modalContent from './jsonFiles/modalContent'
@@ -69,18 +69,17 @@ const Form = () => {
             {/* <div className="flex justify-end p-4 mr-64 px-14  ">
                 <button
                     className={` ${TwdButtonsConfig.primary}  `}
-                    // onClick={openAddUserModal}
+                    onClick={openAddUserModal}
                 >
                     Add user
                 </button>
 
             </div> */}
-            <div className='btn-container flex justify-between px-64 p-2 mr-4 my-2'>
-                <h3 className="text-xl ml-4 font-sans text-gray-600">3 Users</h3>
+            <div className='btn-container mb-2 flex justify-end px-66 ml-96 my-8'>
+                {/* <h3 className="text-xl mr-98 px-6 font-sans text-gray-600">3 Users</h3> */}
                 {/* <Modal Config={roleModal}/> */}
               
             <FormModal Configs={modalContent} 
-            
             
             
             />
@@ -89,20 +88,20 @@ const Form = () => {
             <div className="flex items-center justify-center  ">
                 <form className="bg-white border border-gray-200  shadow-md rounded">
                     <div className=' bg-gray-100 shadow-md h-[8vh]   '>
-
+                      
                         <div className='flex justify-start '>
                             {/* <div className='flex justify-start'> */}
                             <CustomDropdown items={dropDownData} />
-
+                           
                             <div className='flex justify-end ml-52'>
-                                {/* <DropDownContent /> */}
-                                <SearchableComp SearchConfig={SearchInputConfig} />
-                            </div>
+                            {/* <DropDownContent /> */}
+                            <SearchableComp SearchConfig= {SearchInputConfig} />
                         </div>
-
+                        </div>
+                        
                     </div>
                     <div className="mt-4 ">
-                        <TableComponent tableConfig={TableContent} />
+                        <TableComponent tableConfig={tableContent} />
                         {/* <tbody > */}
                             {users.map((user, index) => (
                                 <tr key={index} className={`${index % 2 === 0}  `}>

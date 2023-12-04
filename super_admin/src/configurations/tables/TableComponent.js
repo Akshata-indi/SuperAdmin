@@ -1,22 +1,23 @@
 import React from 'react';
 import DynamicTable from './DynamicTable';
+// import DynamicTable1 from './DynamicTable1';
 
 // const data = [
-//   { id: 1, name: 'John Doe', age: 30 , salary: 500000000},
-//   { id: 2, name: 'Jane Smith', age: 25, salary: 50000 },
-//   { id: 3, name: 'Bob Johnson', age: 40, salary: 50000 },
-//   { id: 3, name: 'Bob Johnson', age: 40 , salary: 50000 },
-//   { id: 3, name: 'Bob Johnson hgghh', age: 40, salary: 50000 },
+//   { name: 'John Doe', email: 'aa@gmail.com',  },
+//   { name: 'Jane Smith', email: 'aa@gmail.com' },
+//   {  name: 'Bob Johnson',  email: 'aa@gmail.com'},
+//   { name: 'Bob Johnson',  email: 'aa@gmail.com'},
+//   {  name: 'Bob Johnson hgghh', email: 'aa@gmail.com' },
 // ];
 
 
 
 
-function TableComponent({tableConfig}) {
+function TableComponent({tableConfig, data}) {
   return (
-    <div>
+    <div >
       
-      <DynamicTable config= {tableConfig} />
+      <DynamicTable config= {tableConfig} data={data} />
     </div>
   );
 }

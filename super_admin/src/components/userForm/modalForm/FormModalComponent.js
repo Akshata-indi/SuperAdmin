@@ -5,11 +5,12 @@ import { Input } from '../../../ui-configs/input/Input';
 import Example from '../../../ui-configs/input/Example';
 import Button from '../../../ui-configs/Buttons/Button'
 import ButtonContent from '../../../components/userForm/jsonFiles/ButtonContent.json'
+// import ButtonConfig from '../../../ui-configs/Buttons/ButtonConfig.json'
 
 const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
-    const { overlay, overlayBackground, container, title, content, createbutton, cancelButton } = FormModalstyle[config.modalcss];
+    const { overlay, overlayBackground, container, title, content, createbutton, cancel } = FormModalstyle[config.modalcss];
 
-    const createButtonName = config.buttons && config.buttons.create ? config.buttons.create : 'Create';
+    // const createButtonName = config.buttons && config.buttons.create ? config.buttons.create : 'Create';
     const cancelButtonName = config.buttons && config.buttons.cancel ? config.buttons.cancel : 'Cancel';
 
     return (
@@ -24,22 +25,23 @@ const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
                         <h2 className={title}>{config.title}</h2>
                         <p className={content}>{config.content}</p>
 
-                        <div className="flex justify-end p-20 mr-20">
-                            <button>
-                                <Button configs={ButtonContent}
-                                />
-                            </button>
-                        </div>
-
+                        
+                          
+                            <Button configs={ButtonContent} />
+                                
+                            
+                      
+                        <div className='mt-32 '>
                         <Input inputConfigs={Example} />
+                        </div>
                         <div className="mt-4 flex justify-between">
-                            <button className={cancelButton} onClick={onClose}>
+                            <button className={cancel} onClick={onClose}>
                                 {cancelButtonName}
                             </button>
 
-                            <button className={createbutton} onClick={onCreate}>
+                            {/* <button className={createbutton} onClick={onCreate}>
                                 {createButtonName}
-                            </button>
+                            </button> */}
 
 
                         </div>

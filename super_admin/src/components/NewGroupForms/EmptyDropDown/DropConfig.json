@@ -1,0 +1,15 @@
+{
+    "config": [
+        {
+            "drop_item": "Hi",
+            "drop_placeholder": "Hey Sourabh",
+            "drop_down_css": "style1"
+        },
+        {
+            "drop_item": "Hiiiiiiiiii"
+        },
+        {
+            "drop_item": "Hey"
+        }
+    ]
+}

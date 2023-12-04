@@ -1,42 +1,32 @@
-import React, { useState } from 'react';
-import { DASHBOARD_SIDEBAR_LINKS } from './IconbarConfig';
-import { NavLink } from 'react-router-dom';
-import IconbarStyle from './IconbarStyle';
+import React from "react";
+import { DASHBOARD_ICONBAR_LINKS } from "./IconConfig";
+import { NavLink } from "react-router-dom";
+import LogoConfig from "../../ui-configs/logo/LogoConfig";
 
 const IconbarComponent = () => {
-  const [activeIcon, setActiveIcon] = useState(null);
-
-  const handleIconClick = (key) => {
-    setActiveIcon(key === activeIcon ? null : key);
-  };
+  
+  const activeLink = "text-[#3e63dd] rounded-md bg-[#E6EDFE]";
+  const normalLink = "text-gray-300 hover:bg-gray-100 hover:rounded-md";
 
   return (
-    <div>
-      <div className="bg-white w-20">
-        <div className="my-4 mx-4">
-          <ul>
-            {DASHBOARD_SIDEBAR_LINKS.links.map((link) => (
-              <li key={link.key}>
-                <NavLink
-                  to={link.path}
-                  activeClassName={IconbarStyle.LogoStyle}
-                  className={IconbarStyle.Style1}
-                  onClick={() => handleIconClick(link.key)}
-                >
-                  <div
-                    className={`${IconbarStyle.Style1} ${
-                      activeIcon === link.key ? IconbarStyle.ActiveStyle : ''
-                    }`}
-                  >
-                    {link.icon}
-                  </div>
-                  {link.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+  
+    <div className="w-14  h-64 flex flex-col items-center justify-between  mt-1 ">
+      <LogoConfig />
+      <ul className=" mt-8 w-12 h-72 flex flex-col justify-between items-center   ">
+      {DASHBOARD_ICONBAR_LINKS.links.map((links) => (
+
+        
+          <NavLink
+            to={links.path}
+            className={({ isActive }) =>
+              isActive ? activeLink : normalLink
+            }
+          ><li className=" cursor-pointer  "> {links.icon}</li>
+          </NavLink>
+       
+      ))}
+      
+      </ul>
     </div>
   );
 };

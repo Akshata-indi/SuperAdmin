@@ -1,23 +1,16 @@
-// import Layout from "./layout/Layout"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import DynamicSidebar from "./configurations/navigation/DynamicSidebar"
-import Iconbar from "./components/iconbar/Iconbar"
+
+// import Layout from "./components/layout/Layout";
+import Layout from "./components/layout/Layout";
+import TableWithData from "./configurations/tables/TableWithData";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-      <Iconbar/>
-      {/* <Routes>
-        <Route path="/user" element={<UserSidebar />} />
-
-        
-
-      </Routes> */}
-      </BrowserRouter>
-      
+      <Layout/>
+      {/* <TableWithData /> */}
     </div>
+    
   );
-}
+} 
 
 export default App;

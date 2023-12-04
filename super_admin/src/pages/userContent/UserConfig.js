@@ -1,0 +1,23 @@
+export const USERS_API = 'users';
+
+export const tableContent = [
+    {
+      "name": "name",
+      "label": "Name",
+      "dataType": "string",
+      "cssClass": "style3"
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "dataType": "string",
+      "cssClass": "style1"
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "dataType": "string",
+      "cssClass": "style11"
+    }
+    
+]

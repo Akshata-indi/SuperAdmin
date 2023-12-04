@@ -1,0 +1,26 @@
+[
+    {
+      "id": "modal",
+      "title": "Add Users",
+      
+    
+
+      "openButton": " Add Users",
+
+
+      "buttons": {
+        "create": "Invite Users",
+        "cancel": "Cancel"
+       
+       
+      },
+
+      "modalcss": "style2"
+
+   
+
+      
+      
+    }
+  ]
+  

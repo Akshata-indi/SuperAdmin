@@ -1,16 +1,21 @@
 [
     {
         "name": "",
-        "label": "Invite with Email",
+        "label": "Invite with email",
         "type": "button",
-        "buttoncss": "hover"
-        
+        "buttoncss": "hover1"
     },
     {
         "name": "",
-        "label": "Upload Csv file",
+        "label": "Upload CSV file",
         "type": "button",
-        "buttoncss": "hover"
-        
+        "buttoncss": "hover2"
+    },
+   
+    {
+        "name": "",
+        "label": "Invite users",
+        "type": "button",
+        "buttoncss": "hover3"
     }
 ]

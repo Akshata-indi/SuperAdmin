@@ -1,23 +1,40 @@
 export const USERS_API = 'users';
 
-export const tableContent = [
+
+
+
+export const ButtonContent = [
+  {
+      name: "",
+      label: "Invite with Email",
+      type: "button",
+      buttoncss: "hover"
+  },
+  {
+      name: "",
+      label: "Upload Csv file",
+      type: "button",
+      buttoncss: "hover"
+  }
+];
+
+export const modalContent = [
+
     {
-      "name": "name",
-      "label": "Name",
-      "dataType": "string",
-      "cssClass": "style3"
-    },
-    {
-      "name": "email",
-      "label": "Email",
-      "dataType": "string",
-      "cssClass": "style1"
-    },
-    {
-      "name": "status",
-      "label": "Status",
-      "dataType": "string",
-      "cssClass": "style11"
+        id: "modal",
+        title: "Add Users",
+        
+        openButton: "Add Users",
+        
+        buttons: {
+            create: "Invite Users",
+            cancel: "Cancel"
+        },
+        modalcss: "style2"
     }
-    
-]
+];
+
+export default modalContent;
+
+
+

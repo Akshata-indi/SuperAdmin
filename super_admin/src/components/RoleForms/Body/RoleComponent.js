@@ -31,12 +31,12 @@ const RoleComponent = () => {
       <div className='sidebar-and-content-container flex px-40 py-10'>
 
         {/* Sidebar */}
-        <div className="w-1/4 bg-white-200 border-2 rounded-l-lg p-4 shadow-sm bg-gray-50" style={{ height: '70vh' }}>
+        <div className="w-1/4 bg-white-200 border-2 border-gray-100 rounded-l-lg p-4 shadow-sm bg-gray-50" style={{ height: '70vh' }}>
           <Sidebar menuConfigs={rolemenuData} />
         </div>
 
         {/* Main content */}
-        <div className="w-3/4 bg-white-200 border-y-2 border-r-2 rounded-r-lg p-4 shadow-sm bg-gray-50" style={{ height: '70vh' }}>
+        <div className="w-3/4 bg-white-200 border-y-2 border-r-2 border-gray-100 rounded-r-lg p-4 shadow-sm bg-gray-50" style={{ height: '70vh' }}>
 
           {/* header */}
           <div className='header-container flex justify-between p-4'>

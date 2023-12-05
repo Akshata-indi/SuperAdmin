@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import Button from '../../ui-configs/Buttons/Button'
-import ButtonContent from '../../components/userForm/jsonFiles/ButtonContent.json'
+
 import Adduser from './AddUser';
 import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
 import dropDownData from '../NewGroupForms/Drop Down Menu/DropDown.json'
 import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 import SearchableComp from '../../configurations/search/SearchableComp'
 import TableComponent from '../../configurations/tables/TableComponent'
-import TableContent from '../../components/userForm/jsonFiles/TableContent.json'
-import TwdButtonsConfig from './TwdButtonsConfig';
-import DropDownContent from '../../configurations/dropDown/DropDownContent';
+import { tableContent} from '../../configurations/tables/Tabledata'
+// import TwdButtonsConfig from './TwdButtonsConfig';
+// import DropDownContent from '../../configurations/dropDown/DropDownContent';
+// import Modal from '../../ui-configs/Modal/Modal';
+import modalContent from './jsonFiles/modalContent'
+import FormModal from './modalForm/FormModal';
 
 const Form = () => {
 
@@ -25,10 +27,10 @@ const Form = () => {
     }, []);
 
 
-    const openAddUserModal = () => {
-        setIsAddUserModalOpen(true);
+    // const openAddUserModal = () => {
+    //     setIsAddUserModalOpen(true);
 
-    };
+    // };
 
     const closeAddUserModal = () => {
         setIsAddUserModalOpen(false);
@@ -64,7 +66,7 @@ const Form = () => {
             
             </button>
         </div> */}
-            <div className="flex justify-end p-4 mr-64 px-14  ">
+            {/* <div className="flex justify-end p-4 mr-64 px-14  ">
                 <button
                     className={` ${TwdButtonsConfig.primary}  `}
                     onClick={openAddUserModal}
@@ -72,6 +74,15 @@ const Form = () => {
                     Add user
                 </button>
 
+            </div> */}
+            <div className='btn-container mb-2 flex justify-end px-66 ml-96 my-8'>
+                {/* <h3 className="text-xl mr-98 px-6 font-sans text-gray-600">3 Users</h3> */}
+                {/* <Modal Config={roleModal}/> */}
+              
+            <FormModal Configs={modalContent} 
+            
+            
+            />
             </div>
 
             <div className="flex items-center justify-center  ">
@@ -90,8 +101,8 @@ const Form = () => {
                         
                     </div>
                     <div className="mt-4 ">
-                        <TableComponent tableConfig={TableContent} />
-                        <tbody >
+                        <TableComponent tableConfig={tableContent} />
+                        {/* <tbody > */}
                             {users.map((user, index) => (
                                 <tr key={index} className={`${index % 2 === 0}  `}>
                                     <td className=" px-16 py-2 border-t-2">{user.name}</td>
@@ -107,7 +118,7 @@ const Form = () => {
                                     </td>
                                 </tr>
                             ))}
-                        </tbody>
+                        {/* </tbody> */}
 
 
                         {/* </table> */}

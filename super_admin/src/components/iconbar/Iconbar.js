@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
-import IconbarComponent from './IconbarComponent';
+import React from 'react'
+import IconbarComponent from './IconbarComponent'
 
-
-
-
-const IconBar = () => {
-//   const [selectedIcon, setSelectedIcon] = useState(null);
-
-//   const handleIconClick = (icon) => {
-//     setSelectedIcon(icon);
-//     // Add any other logic you need
-//   };
-
+const Iconbar = () => {
   return (
-    <div>   
-      <IconbarComponent/>
-    </div>
-  );
-};
+    <>
+        <IconbarComponent />
+    </>
+  )
+}
 
-export default IconBar;
+export default Iconbar

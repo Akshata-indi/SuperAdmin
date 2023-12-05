@@ -1,0 +1,15 @@
+[
+    {
+      "name": "name",
+      "label": "name",
+      "dataType": "string",
+      "cssClass": "style6"
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "dataType": "string",
+      "cssClass": "style6"
+    }
+  ]
+  

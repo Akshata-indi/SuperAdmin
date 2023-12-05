@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import FormModal from './FormModal'
-import modalConfig from './modalConfig.json'
+
 import FormComponent from '../config_component/FormComponent';
 import formData from '../config_component/formData.json'
 

@@ -6,7 +6,7 @@ const PermissionNav = () => {
   return (
     <div>
         <div className='pt-10'>
-            <TableComponent tableConfig={columnData} />
+            {/* <TableComponent tableConfig={columnData} /> */}
         </div>
     </div>
   )

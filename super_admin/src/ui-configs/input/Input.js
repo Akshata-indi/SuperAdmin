@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import InputComponent from './InputComponent';
 import InputStyle from './InputStyle';
@@ -21,16 +20,6 @@ const Input = ({ config }) => {
           textcss={InputStyle[input.textcss]}
         />
       ))}
-=======
-import React from 'react'
-
-import DynamicInput from './DynamicInput'
-
-export const Input = ({inputConfigs}) => {
-  return (
-    <div>
-        <DynamicInput config={inputConfigs} />
->>>>>>> Master
     </div>
   );
 };

@@ -59,7 +59,7 @@ const UserComponent = () => {
           <div className='flex justify-end  ml-24 '>
 
             <SearchableComp SearchConfig={SearchInputConfig} />
-          </div>
+          </div> 
         </div>
 
         </div>

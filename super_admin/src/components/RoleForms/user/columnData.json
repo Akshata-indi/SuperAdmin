@@ -1,13 +1,13 @@
 [
     {
-      "name": "username",
-      "label": "User name",
-      "dataType": "number",
+      "name": "name",
+      "label": "name",
+      "dataType": "string",
       "cssClass": "style6"
     },
     {
-      "name": "emailid",
-      "label": "Email id",
+      "name": "email",
+      "label": "Email",
       "dataType": "string",
       "cssClass": "style6"
     }

@@ -7,10 +7,6 @@ export const Input = ({ inputConfigs }) => {
     <div>
 
       <DynamicInput config={inputConfigs} />
-
-        <DynamicInput config={inputConfigs} />
-
-
     </div>
   );
 };

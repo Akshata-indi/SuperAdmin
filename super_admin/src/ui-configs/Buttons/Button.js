@@ -1,20 +1,14 @@
 import React from 'react';
+import { ButtonConfig } from './ButtonConfig'; // Import named export 'ButtonConfig' (not default export)
+
 import ButtonComponent from './ButtonComponent';
 
-const Button = ({ configs }) => {
-  return (
-    <div>
-      {configs.map(({ name, label, type, buttoncss }) => (
-        <ButtonComponent
-          key={name}
-          name={name}
-          label={label}
-          type={type}
-          buttoncss={buttoncss}
-        />
-      ))}
-    </div>
-  );
-};
+function Button() {
+    return (
+        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <ButtonComponent configs={ButtonConfig} />
+        </div>
+    );
+}
 
 export default Button;

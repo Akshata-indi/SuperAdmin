@@ -1,8 +1,9 @@
-// Button.js
+// Button without the left & right icon,  left & right position not working we'll sort it out later
 import React from 'react';
 import { ButtonConfig, iconComponents } from './ButtonConfig'; // Importing iconComponents
 import ButtonStyle from './ButtonStyle'; // Importing ButtonStyle
 
+// to override the warnings of ButtonConfig you can use like this configs = ButtonConfig
 const ButtonComponent = ({ configs }) => {
   const renderIcon = (icon) => {
     if (!icon || !icon.render) return null;
@@ -29,4 +30,4 @@ const ButtonComponent = ({ configs }) => {
   );
 };
 
-export default ButtonComponent;
+export default ButtonComponent; 

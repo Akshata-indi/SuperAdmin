@@ -17,7 +17,7 @@ const ButtonConfig = [
         buttoncss: 'Primary',
         icon: {
             component: 'FaCheck',
-            position: 'left',
+            position: 'right',
             render: () => {
                 const IconComponent = iconComponents['FaCheck'];
                 return <IconComponent />;
@@ -39,13 +39,13 @@ const ButtonConfig = [
         },
     },
     {
-        name: 'sourabhButton', // Changed the button name to 'helloButton'
+        name: 'sourabhButton',
         label: 'Hello Sourabh',
         type: 'button',
         buttoncss: 'Primary',
         icon: {
-            component: 'FaAtom', // Corrected the icon name to 'FaAmilia'
-            // position: 'left', // Positioned to the right
+            component: 'FaAtom', // This should match the icon component in iconComponents
+            position: 'right', // or 'right' as per the intended position
             render: () => {
                 const IconComponent = iconComponents['FaAtom'];
                 return <IconComponent />;

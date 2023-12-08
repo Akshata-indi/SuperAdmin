@@ -1,19 +1,25 @@
 import React from 'react'
-import CustomDropdown from '../../NewGroupForms/Drop Down Menu/CustomDropdown'
-import dropDownData from '../../NewGroupForms/Drop Down Menu/DropDown.json'
-import TableComponent from '../../../configurations/tables/TableComponent'
-import columnData from './columnData.json'
+import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent'
+import appDropdown from './appDropdown.json'
+import Modal from '../../../ui-configs/Modal/Modal'
+import appModal from './appModal.json'
+// import CustomDropdown from '../../../ui-configs/Dropdown/CustomDropdown'
+// import dropDownData from './dropDownData.json'
+// import TableComponent from '../../../configurations/tables/TableComponent'
+// import columnData from './columnData.json'
 
 const AppNav = () => {
   return (
     <div>
-        <div className='dropdown-container pt-4 pl-8'>
-        <CustomDropdown items={dropDownData} />
+        <div className='dropdown-container pt-4 pl-8 flex'>
+          {/* <CustomDropdown items={dropDownData} /> */}
+          <EDropComponent configs={appDropdown.config} />
+          <Modal Config={appModal} />
         </div>
 
-        <div className='pt-10'>
-        {/* <TableComponent tableConfig={columnData} /> */}
-        </div>
+        {/* <div className='pt-10'>
+          <TableComponent tableConfig={columnData} data={role}/>
+        </div> */}
     </div>
   )
 }

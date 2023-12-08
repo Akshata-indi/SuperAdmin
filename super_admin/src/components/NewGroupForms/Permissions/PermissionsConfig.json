@@ -1,8 +1,4 @@
 {
-    "headers": {
-        "resourceType": "Resource Type",
-        "permissions": "Permissions"
-    },
     "permissions": [
         {
             "resourceType": "Apps",

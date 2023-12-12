@@ -1,17 +1,28 @@
 // ModalComponent.js
-import React from 'react';
+import React, { useState } from 'react';
 import FormModalstyle from './FormModalstyle'
 import { Input } from '../../../ui-configs/input/Input';
 import Example from '../../../ui-configs/input/Example';
 import Button from '../../../ui-configs/Buttons/Button'
-import ButtonContent from '../../../components/userForm/jsonFiles/ButtonContent.json'
+import { ButtonContent } from '../../../pages/userContent/UserConfig';
+
+import { Button1 } from '../../../pages/userContent/UserConfig';
+import EmailForm from './EmailForm';
+import CsvForm from './CsvForm';
 // import ButtonConfig from '../../../ui-configs/Buttons/ButtonConfig.json'
 
 const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
     const { overlay, overlayBackground, container, title, content, createbutton, cancel } = FormModalstyle[config.modalcss];
+   
+
+    const [activeForm, setActiveForm] = useState('form1')
+
+    const handleToggleForm = (formName) => {
+        setActiveForm(formName);
+    };
 
     // const createButtonName = config.buttons && config.buttons.create ? config.buttons.create : 'Create';
-    const cancelButtonName = config.buttons && config.buttons.cancel ? config.buttons.cancel : 'Cancel';
+    // const cancelButtonName = config.buttons && config.buttons.cancel ? config.buttons.cancel : 'Cancel';
 
     return (
         <div>
@@ -24,17 +35,65 @@ const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
                     <div className={container}>
                         <h2 className={title}>{config.title}</h2>
                         <p className={content}>{config.content}</p>
+                    <div className='border-gray-200 border-2 mx-5 bg-gray-200 h-9.5 w-[94.5%] rounded-md'>
+                        
+                        <button 
+          className={`bg-white hover:bg-gray-300 w-64 text-black px-16 py-2  rounded  ${activeForm === 'form1' ? 'opacity-75' : ''}`}
+          onClick={() => handleToggleForm('form1')}
+        >
+          {activeForm === 'form1' ? 'Invite with Email' : 'Invite with Email'}
+        </button>
+                    
+        <button
+          className={`bg-white  hover:bg-gray-300 w-64 text-black px-16 py-2  rounded  ${activeForm === 'form2' ? 'opacity-75' : ''}`}
+          onClick={() => handleToggleForm('form2')}
+        >
+          {activeForm === 'form2' ? 'Upload CSV file' : 'Upload CSV file'}
+        </button>         
+               </div>     
 
-                        <div >
-                            <Button configs={ButtonContent} />
-                        </div>
-                        <div className='mt-32 '>
-                        <Input inputConfigs={Example} />
-                        </div>
-                        <div className="mt-4 flex justify-between">
-                            <button className={cancel} onClick={onClose}>
+
+               {activeForm === 'form1' && (
+        <EmailForm />
+      )}
+             {activeForm === 'form2' && (
+      < CsvForm />
+      )}       
+                    
+                    {/* {
+
+                        // show? < EmailForm /> :null
+                    }
+
+                      <button className='border-gray-600 border px-4 mx-4 bg-blue-300' onClick={()=>setShow(true)}> Upload Csv file </button> 
+                      <button className='border-gray-600 border px-4 bg-blue-300' onClick={()=>setShow(false)}> Invite with email</button>  
+                         */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            {/* <Button configs={ButtonContent} /> */}
+                       
+                            
+                            
+                           
+                       
+                        {/* <Input inputConfigs={Example} /> */}
+                      
+                        {/* <div className="mt-4 flex justify-between"> */}
+                            {/* <button className={cancel} onClick={onClose}>
                                 {cancelButtonName}
-                            </button>
+                            </button> */}
 
                             
 
@@ -45,7 +104,7 @@ const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
 
                         </div>
                     </div>
-                </div>
+                
             )}
         </div>
     );

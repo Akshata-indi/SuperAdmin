@@ -22,17 +22,7 @@ const Example = [
         inputcss: "boxInput1"
 
     },
-    {
-
-        label: "",
-
-        type: "text",
-
-        placeholder: "Select groups to add this user",
-
-        inputcss: "boxInput1"
-
-    },
+    
    
 ]
 

@@ -49,28 +49,20 @@ const UserComponent = () => {
         <FormModal Configs={modalContent} />
       </div>
 
-      <form className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded">
-        <div className=' bg-gray-100 shadow-sm h-[8vh]   '>
+      <form className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] overflow-y-auto">
+  <div className='bg-gray-100 shadow-sm h-[8vh]'>
+    <div className='flex justify-start'>
+      <CustomDropdown items={dropDownData} />
+      <div className='flex justify-end ml-24 '>
+        <SearchableComp SearchConfig={SearchInputConfig} />
+      </div>
+    </div>
+  </div>
+  <div className=" ">
+    <TableComponent tableConfig={tableContent} data={data}/>
+  </div>
+</form>
 
-          <div className='flex justify-start '>
-
-          <CustomDropdown items={dropDownData} />
-
-          <div className='flex justify-end  ml-24 '>
-
-            <SearchableComp SearchConfig={SearchInputConfig} />
-          </div> 
-        </div>
-
-        </div>
-        <div className=" ">
-          <TableComponent tableConfig={tableContent} data={data}/>
-
-
-
-         
-        </div>
-      </form >
 
 
 

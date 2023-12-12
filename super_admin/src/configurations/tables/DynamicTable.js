@@ -9,7 +9,7 @@ function DynamicTable({ config, data }) {
       <thead className=''>
         <tr >
           {config.map((column) => (
-            <th key={column.name} className={TableStyle.style1} >
+            <th key={column.name} className={TableStyle[column.clmncss]}>
               {column.label}               
             </th>
           ))}

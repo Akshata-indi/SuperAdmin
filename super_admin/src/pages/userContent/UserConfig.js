@@ -4,18 +4,34 @@ export const USERS_API = 'users';
 
 
 export const ButtonContent = [
-  {
-      name: "",
-      label: "Invite with Email",
-      type: "button",
-      buttoncss: "hover"
-  },
-  {
-      name: "",
-      label: "Upload Csv file",
-      type: "button",
-      buttoncss: "hover"
-  }
+    {
+        name: "",
+        label: "Invite with email",
+        type: "button",
+        buttoncss: "hover1",
+      },
+      {
+        name: "",
+        label: "Upload CSV file",
+        type: "button",
+        buttoncss: "hover2",
+      },
+
+    ]
+
+export const Button1 = [
+      {
+        name: "",
+        label: "Invite users",
+        type: "button",
+        buttoncss: "hover3",  
+      },
+      {
+        name: "",
+        label: "Cancel",
+        type: "button",
+        buttoncss: "hover4",
+      }
 ];
 
 export const modalContent = [

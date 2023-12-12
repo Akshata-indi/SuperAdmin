@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import InputComponent from './InputComponent';
@@ -36,6 +37,7 @@ const Input = ({ config }) => {
         />
       ))}
       <button onClick={handleSubmit}>Submit</button>
+
     </div>
   );
 };

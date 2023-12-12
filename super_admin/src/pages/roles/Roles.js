@@ -1,6 +1,6 @@
 import React from 'react'
 import BodyContent from '../../configurations/bodyContent/BodyContent'
-import RoleComponent from './RoleComponent'
+import RoleComponent from '../../components/RoleForms/Body/RoleComponent'
 
 const Roles = () => {
   return (

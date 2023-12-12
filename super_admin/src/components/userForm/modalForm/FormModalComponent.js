@@ -25,12 +25,9 @@ const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
                         <h2 className={title}>{config.title}</h2>
                         <p className={content}>{config.content}</p>
 
-                        
-                          
+                        <div >
                             <Button configs={ButtonContent} />
-                            {/* fgfhfgk */}
-                            
-                      
+                        </div>
                         <div className='mt-32 '>
                         <Input inputConfigs={Example} />
                         </div>
@@ -38,6 +35,8 @@ const FormModalComponent = ({ isOpen, onClose, config, onCreate }) => {
                             <button className={cancel} onClick={onClose}>
                                 {cancelButtonName}
                             </button>
+
+                            
 
                             {/* <button className={createbutton} onClick={onCreate}>
                                 {createButtonName}

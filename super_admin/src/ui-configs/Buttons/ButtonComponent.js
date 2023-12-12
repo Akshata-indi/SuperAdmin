@@ -1,21 +1,33 @@
+// Button without the left & right icon,  left & right position not working we'll sort it out later
 import React from 'react';
-import ButtonStyle from './ButtonStyle'; // Assuming ButtonStyle.js is in the same directory
+import { ButtonConfig, iconComponents } from './ButtonConfig'; // Importing iconComponents
+import ButtonStyle from './ButtonStyle'; // Importing ButtonStyle
 
+// to override the warnings of ButtonConfig you can use like this configs = ButtonConfig
+const ButtonComponent = ({ configs }) => {
+  const renderIcon = (icon) => {
+    if (!icon || !icon.render) return null;
 
-const ButtonComponent = ({ name, label, type, buttoncss, onClick }) => {
-  const btnStyle = ButtonStyle[buttoncss] || ''; // Ensure there's a valid style
+    const IconComponent = iconComponents[icon.component];
+    return icon.render(); // Directly call the render function from ButtonConfig.js
+  };
 
-  console.log("ppppppppppp")
-  console.log(onClick)
   return (
     <div>
-      {type === 'button' && (
-        <button onClick={onClick} className={btnStyle}>
+      {configs.map(({ name, label, type, buttoncss, icon }) => (
+        <button
+          key={name}
+          name={name}
+          label={label}
+          type={type}
+          className={`${ButtonStyle[buttoncss]}`}
+        >
+          {renderIcon(icon)}
           {label}
         </button>
-      )}
+      ))}
     </div>
   );
 };
 
-export default ButtonComponent;
+export default ButtonComponent; 

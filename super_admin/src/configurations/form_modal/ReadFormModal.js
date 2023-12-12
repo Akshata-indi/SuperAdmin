@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import FormModal from './FormModal'
 
-import FormComponent from '../config_component/FormComponent';
-import formData from '../config_component/formData.json'
+import FormComponent from '../form/FormComponent';
+import formData from '../form/formData.json'
+import modalData from '../../ui-configs/Modal/modalData.json'
 
-
-const ReadFormModal = () => {
+const ReadFormModal = ({config}) => {
   const [openModal, setOpenModal] = useState(null);
 
   const closeModal = () => {
@@ -14,7 +14,7 @@ const ReadFormModal = () => {
 
   return (
     <div className="App">
-      {modalConfig.map((modal) => (
+      {config.map((modal) => (
         <button
           key={modal.id}
           className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
@@ -24,7 +24,7 @@ const ReadFormModal = () => {
         </button>
       ))}
 
-      {modalConfig.map((modal) => (
+      {config.map((modal) => (
         <FormModal
           key={modal.id}
           isOpen={openModal === modal}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import axios from 'axios';
 import DateComponent from '../../ui-configs/date/DateComponent';
 // import DateStyle from './date/DateStyle';
 import TextComponent from '../../ui-configs/text/TextComponent';
@@ -15,16 +15,27 @@ import TimeComponent from '../../ui-configs/time/TimeComponent';
 
 
 const FormComponent = ({config}) => {
-
-  
     const [values, setValues] = useState({});
   
     const handleChange = (name, value) => {
       setValues({ ...values, [name]: value });
     };
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        // Make a POST request to your JSON Server endpoint
+        const response = await axios.post('http://localhost:3000/formData', values);
+        console.log('Data sent:', response.data); // Log the response from the server
+        // Optionally, you can handle success here
+      } catch (error) {
+        console.error('Error:', error); // Log any errors that occur during the request
+        // Optionally, you can handle errors here
+      }
+    };
   
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         {config.map((field, index) => (
           <div key={index}>
             {field.type === "text" && (
@@ -122,6 +133,8 @@ const FormComponent = ({config}) => {
             )}
           </div>
         ))}
+         <button type="submit">Submit</button>
+         <button type="cancel">cancel</button>
       </form>
     );
   };

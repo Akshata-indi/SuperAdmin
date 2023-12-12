@@ -13,38 +13,38 @@ import userModal from './userModal.json'
 
 const UserNav = () => {
 
-  // const [data, setData] = useState([])
-  // const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
-  // const fetchData = async () => {
-  //   try {
-  //     const response = await axios.get(getApiUrl(USERS_API));
-  //     console.log('API Response:', response.data);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(getApiUrl(USERS_API));
+      console.log('API Response:', response.data);
 
-  //     setData(response.data);
-  //   } catch (error) {
-  //     console.error(`Error fetching ${USERS_API} data:`, error);
-  //   }
-  // };
+      setData(response.data);
+    } catch (error) {
+      console.error(`Error fetching ${USERS_API} data:`, error);
+    }
+  };
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetchData();
-  //     setIsLoading(false)
-  //   }, 2000);
+  useEffect(() => {
+    setTimeout(() => {
+      fetchData();
+      setIsLoading(false)
+    }, 2000);
    
-  // }, []);
+  }, []);
 
-    const role = [
-      { name: 'John Doe', email: 'aa@gmail.com',  },
-      { name: 'Jane Smith', email: 'aa@gmail.com' },
-      {  name: 'Bob Johnson',  email: 'aa@gmail.com'},
-      { name: 'Bob Johnson',  email: 'aa@gmail.com'},
-      {  name: 'Bob Johnson', email: 'aa@gmail.com' },
-    ];
+    // const role = [
+    //   { name: 'John Doe', email: 'aa@gmail.com',  },
+    //   { name: 'Jane Smith', email: 'aa@gmail.com' },
+    //   {  name: 'Bob Johnson',  email: 'aa@gmail.com'},
+    //   { name: 'Bob Johnson',  email: 'aa@gmail.com'},
+    //   {  name: 'Bob Johnson', email: 'aa@gmail.com' },
+    // ];
 
-      console.log('role:',role)
-      console.log('columnData:',columnData)
+    //   console.log('role:',role)
+    //   console.log('columnData:',columnData)
 
   return (
     <div>
@@ -55,7 +55,7 @@ const UserNav = () => {
         </div>
 
         <div className='pt-10'>
-          <TableComponent tableConfig={columnData} data={role}/>
+          <TableComponent tableConfig={columnData} data={data}/>
         </div>
     </div>
   )

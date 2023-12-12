@@ -13,26 +13,26 @@ import RadioComponent from '../../ui-configs/radio_button/RadioComponent';
 import TextareaComponent from '../../ui-configs/textarea/TextareaComponent';
 import TimeComponent from '../../ui-configs/time/TimeComponent';
 
-
-const FormComponent = ({config}) => {
-    const [values, setValues] = useState({});
+const FormComponent = ({ config }) => {
+  const [values, setValues] = useState([]);
   
-    const handleChange = (name, value) => {
-      setValues({ ...values, [name]: value });
-    };
+  
+  const handleChange = (name, value) => {
+    setValues({ ...values, [name]: value });
+  };
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      try {
-        // Make a POST request to your JSON Server endpoint
-        const response = await axios.post('http://localhost:3000/formData', values);
-        console.log('Data sent:', response.data); // Log the response from the server
-        // Optionally, you can handle success here
-      } catch (error) {
-        console.error('Error:', error); // Log any errors that occur during the request
-        // Optionally, you can handle errors here
-      }
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      
+      const response = await axios.post('http://localhost:3002/formData', values);
+      console.log('Data sent:', response.data); 
+    
+    } catch (error) {
+      console.error('Error:', error); 
+      
+    }
+  };
   
     return (
       <form onSubmit={handleSubmit}>
@@ -41,6 +41,7 @@ const FormComponent = ({config}) => {
             {field.type === "text" && (
               <TextComponent
                 label={field.label}
+                name={field.label}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]} // Access textStyle.textcss
@@ -49,6 +50,7 @@ const FormComponent = ({config}) => {
             {field.type === "date" && (
               <DateComponent
                 label={field.label}
+                name={field.label}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -57,6 +59,7 @@ const FormComponent = ({config}) => {
             {field.type === "email" && (
               <EmailComponent
                 label={field.label}
+                name={field.label}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -65,6 +68,7 @@ const FormComponent = ({config}) => {
             {field.type === "password" && (
               <PasswordComponent
                 label={field.label}
+                name={field.label}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -133,9 +137,8 @@ const FormComponent = ({config}) => {
             )}
           </div>
         ))}
-         <button type="submit">Submit</button>
-         <button type="cancel">cancel</button>
-      </form>
+          <button type="submit">Submit</button>
+    </form>
     );
   };
   

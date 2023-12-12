@@ -3,13 +3,13 @@
       "name": "name",
       "label": "name",
       "dataType": "string",
-      "cssClass": "style6"
+      "cssClass": "datastyle"
     },
     {
       "name": "email",
       "label": "Email",
       "dataType": "string",
-      "cssClass": "style6"
+      "cssClass": "datastyle"
     }
   ]
   

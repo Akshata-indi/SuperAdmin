@@ -13,9 +13,96 @@
 }
 
   "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "title": "json",
+      "author": "typi",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "formData": [
+    {
+      "title": "json",
+      "author": "typi",
+      "id": 1
+    },
+    {
+      "fristname": "json",
+      "lastname": "typi",
+      "email": "ss@gmail.com",
+      "id": 2
+    },
+    {
+      "Email": "pole.shashank@infokalash.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 3
+    },
+    {
+      "First Name": "fvfv",
+      "Last Name": "fvfv",
+      "Email": "saba@gmail.com",
+      "Password": "kjhfvr",
+      "id": 4
+    },
+    {
+      "First Name": "fvfv",
+      "Last Name": "fvfv",
+      "Email": "saba@gmail.com",
+      "Password": "kjhfvr",
+      "id": 5
+    },
+    {
+      "Email": "ee@gmail.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 6
+    },
+    {
+      "Email": "ee@gmail.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 7
+    }
+  ],
+  "inputData": [
+    {
+      "First Name": "abc",
+      "id": 1
+    },
+    {
+      "First Name": "abc",
+      "id": 2
+    },
+    {
+      "First Name": "abc",
+      "id": 3
+    },
+    {
+      "First Name": "abc",
+      "id": 4
+    }
   ]
 }
 

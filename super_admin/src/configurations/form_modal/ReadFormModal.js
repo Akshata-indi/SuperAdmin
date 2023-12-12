@@ -4,6 +4,8 @@ import FormModal from './FormModal'
 import FormComponent from '../form/FormComponent';
 import formData from '../form/formData.json'
 import modalData from '../../ui-configs/Modal/modalData.json'
+import Input from '../../ui-configs/input/Input';
+import inputData from '../../ui-configs/input/inputData.json'
 
 const ReadFormModal = ({config}) => {
   const [openModal, setOpenModal] = useState(null);
@@ -33,7 +35,7 @@ const ReadFormModal = ({config}) => {
           backdropClass="bg-black opacity-50" // Add your custom classes for the backdrop here
         >
           {/* Render FormComponent within the modal when open */}
-          {openModal === modal && <FormComponent config={formData}/>} 
+          {openModal === modal && <Input config={inputData}/>} 
         </FormModal>
       ))}
     </div>

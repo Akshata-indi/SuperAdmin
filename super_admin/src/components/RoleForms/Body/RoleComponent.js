@@ -9,6 +9,9 @@ import Header from '../header/Header';
 import AppNav from '../app/AppNav'
 import UserNav from '../user/UserNav'
 import PermissionsNav from '../permission/PermissionNav'
+import Fmodal from '../../../configurations/form_modal/Fmodal';
+import inputData from '../../../ui-configs/input/inputData.json'
+import rolemodalData from './rolemodalData.json'
 
 const RoleComponent = () => {
   const [selectedNavItem, setSelectedNavItem] = useState(null);
@@ -23,7 +26,7 @@ const RoleComponent = () => {
 
         <div className='btn-container flex justify-between px-40'>
           <h3 className="text-xl font-sans text-gray-600">2 Roles</h3>
-          <Modal Config={roleModal} />
+          <Fmodal configs={roleModal} iconfig={rolemodalData} />
         </div>
       </div>
 
@@ -49,11 +52,11 @@ const RoleComponent = () => {
             <Nav configs={rolenavData} handleNavClick={handleNavClick} />
           </div>
 
-          <hr className="border-b-1 border-gray-200 ml-0" />
+          <hr className="border-b-1 border-gray-200" />
 
           {/* body components */}
           <div className='main-body' style={{ height: 'calc(70vh - 120px)' }}>
-            <div className='p-4'>
+            <div className=''>
               {(selectedNavItem === 'Apps' || selectedNavItem === null) && <AppNav />}
               {selectedNavItem === 'User' && <UserNav />}
               {selectedNavItem === 'Permissions' && <PermissionsNav />}

@@ -3,9 +3,9 @@ import { FaCheck, FaUndo, FaAmilia, FaAtom } from 'react-icons/fa'; // Import ne
 
 const iconComponents = {
     FaCheck: () => <FaCheck />,
-    FaUndo: () => <FaUndo />,
-    FaAmilia: () => <FaAmilia />,
-    FaAtom: () => <FaAtom />, // Added a new icon component for the 'FaAtom' icon
+    // FaUndo: () => <FaUndo />,
+    // FaAmilia: () => <FaAmilia />,
+    // FaAtom: () => <FaAtom />, // Added a new icon component for the 'FaAtom' icon
     // Add more icons if needed
 };
 
@@ -24,48 +24,7 @@ const ButtonConfig = [
             },
         },
     },
-    {
-        name: 'helloButton', // Changed the button name to 'helloButton'
-        label: 'Hello',
-        type: 'button',
-        buttoncss: 'Secondary',
-        icon: {
-            component: 'FaAmilia', // Corrected the icon name to 'FaAmilia'
-            position: 'left', // Positioned to the right
-            render: () => {
-                const IconComponent = iconComponents['FaAmilia'];
-                return <IconComponent />;
-            },
-        },
-    },
-    {
-        name: 'sourabhButton',
-        label: 'Hello Sourabh',
-        type: 'button',
-        buttoncss: 'Primary',
-        icon: {
-            component: 'FaAtom', // This should match the icon component in iconComponents
-            position: 'right', // or 'right' as per the intended position
-            render: () => {
-                const IconComponent = iconComponents['FaAtom'];
-                return <IconComponent />;
-            },
-        },
-    },
-    {
-        name: 'resetButton',
-        label: 'Reset',
-        type: 'button',
-        buttoncss: 'Secondary',
-        icon: {
-            component: 'FaUndo',
-            position: 'left',
-            render: () => {
-                const IconComponent = iconComponents['FaUndo'];
-                return <IconComponent />;
-            },
-        },
-    },
+    
 ];
 
 export { ButtonConfig, iconComponents };

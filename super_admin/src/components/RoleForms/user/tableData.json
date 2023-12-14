@@ -15,7 +15,7 @@
       "name": "status",
       "label": "Status",
       "dataType": "string",
-      "cssClass": "style11"
+      "cssClass": "style1"
     }
     
 ]

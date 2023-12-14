@@ -35,7 +35,7 @@ const ReadFormModal = ({config}) => {
           backdropClass="bg-black opacity-50" // Add your custom classes for the backdrop here
         >
           {/* Render FormComponent within the modal when open */}
-          {openModal === modal && <Input config={inputData}/>} 
+          {openModal === modal && <FormComponent config={formData}/>} 
         </FormModal>
       ))}
     </div>

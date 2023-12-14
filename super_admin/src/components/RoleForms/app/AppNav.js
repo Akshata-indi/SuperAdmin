@@ -7,6 +7,9 @@ import appModal from './appModal.json'
 // import dropDownData from './dropDownData.json'
 // import TableComponent from '../../../configurations/tables/TableComponent'
 // import columnData from './columnData.json'
+import Fmodal from '../../../configurations/form_modal/Fmodal'
+// import modalData from '../../../ui-configs/Modal/modalData.json'
+
 
 const AppNav = () => {
   return (
@@ -14,7 +17,7 @@ const AppNav = () => {
         <div className='dropdown-container pt-4 pl-8 flex'>
           {/* <CustomDropdown items={dropDownData} /> */}
           <EDropComponent configs={appDropdown.config} />
-          <Modal Config={appModal} />
+          <Fmodal configs={appModal} />
         </div>
 
         {/* <div className='pt-10'>

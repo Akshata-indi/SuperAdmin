@@ -18,6 +18,7 @@ const FormComponent = ({ config }) => {
   
   
   const handleChange = (name, value) => {
+    
     setValues({ ...values, [name]: value });
   };
 

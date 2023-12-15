@@ -1,0 +1,25 @@
+{
+    "permissions": [
+        {
+            "resourceType": "Apps",
+            "permissions": {
+                "Create": true
+            }
+        },
+        {
+            "resourceType": "Folder",
+            "permissions": {
+                "Create": true,
+                "Update": true,
+                "Delete": true
+            }
+        },
+        {
+            "resourceType": "Workspace Variables",
+            "permissions": {
+                "Create": true,
+                "Delete": true
+            }
+        }
+    ]
+}

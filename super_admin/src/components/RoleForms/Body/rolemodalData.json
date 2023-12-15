@@ -2,13 +2,11 @@
 
     {
     
-    
-    
     "type": "text",
     
     "placeholder": "First Name",
     
-    "textcss": "boxInput"
-    
+    "textcss": "boxInput"   
     }
-    ]
+
+]

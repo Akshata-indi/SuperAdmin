@@ -52,7 +52,7 @@ const UserNav = () => {
           <ButtonComponent configs={buttonData} />
         </div>
 
-        <div className='table-container h-[40vh] overflow-y-auto pt-4'>
+        <div className='table-container h-[40vh] pt-4'>
           <TableComponent tableConfig={columnData} data={data}/>
         </div>
     </div>

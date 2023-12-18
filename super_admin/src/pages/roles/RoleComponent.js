@@ -17,39 +17,39 @@ import TableComponent from '../../configurations/tables/TableComponent'
 
 
 const RoleComponent = () => {
-//   const [data, setData] = useState([])
-//   const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
-//   const fetchData = async () => {
-//     try {
-//       const response = await axios.get(getApiUrl(USERS_API));
-//       console.log('API Response:', response.data);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(getApiUrl(USERS_API));
+      console.log('API Response:', response.data);
 
-//       setData(response.data);
-//     } catch (error) {
-//       console.error(`Error fetching ${USERS_API} data:`, error);
-//     }
-//   };
+      setData(response.data);
+    } catch (error) {
+      console.error(`Error fetching ${USERS_API} data:`, error);
+    }
+  };
 
-//   useEffect(() => {
-//     setTimeout(() => {
-//       fetchData();
-//       setIsLoading(false)
-//     }, 2000);
+  useEffect(() => {
+    setTimeout(() => {
+      fetchData();
+      setIsLoading(false)
+    }, 2000);
    
-//   }, []);
+  }, []);
 
-    const role = [
-      { roleId:101, roleName: 'Role 1', description: 'Description 1',  },
-      { roleId:102, roleName: 'Role 2', description: 'Description 2',  },
-      { roleId:103, roleName: 'Role 3', description: 'Description 3',  },
-      { roleId:104, roleName: 'Role 4', description: 'Description 4',  },
-      { roleId:105, roleName: 'Role 5', description: 'Description 5',  },
-      { roleId:106, roleName: 'Role 6', description: 'Description 6',  },
-      { roleId:107, roleName: 'Role 7', description: 'Description 7',  },
-      { roleId:108, roleName: 'Role 8', description: 'Description 8',  },
-    ];
-    console.log(role)
+    // const role = [
+    //   { roleId:101, roleName: 'Role 1', description: 'Description 1',  },
+    //   { roleId:102, roleName: 'Role 2', description: 'Description 2',  },
+    //   { roleId:103, roleName: 'Role 3', description: 'Description 3',  },
+    //   { roleId:104, roleName: 'Role 4', description: 'Description 4',  },
+    //   { roleId:105, roleName: 'Role 5', description: 'Description 5',  },
+    //   { roleId:106, roleName: 'Role 6', description: 'Description 6',  },
+    //   { roleId:107, roleName: 'Role 7', description: 'Description 7',  },
+    //   { roleId:108, roleName: 'Role 8', description: 'Description 8',  },
+    // ];
+    // console.log(role)
       
   return (
     <div >
@@ -68,7 +68,7 @@ const RoleComponent = () => {
     </div>
   </div>
   <div className=" ">
-    <TableComponent tableConfig={tableContent} data={role}/>
+    <TableComponent tableConfig={tableContent} data={data}/>
   </div>
 </form>
 </div>

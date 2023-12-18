@@ -17,7 +17,7 @@ import ButtonComponent from '../../../ui-configs/Buttons/ButtonComponent'
 const AppNav = () => {
   return (
     <div>
-        <div className='dropdown-container pt-4 pl-8 flex'>
+        <div className='dropdown-container pt-2 pl-8 flex'>
           {/* <CustomDropdown items={dropDownData} /> */}
           <EDropComponent configs={appDropdown.config} />
           <ButtonComponent configs={buttonData} />

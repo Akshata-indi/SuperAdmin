@@ -26,7 +26,7 @@ const FormComponent = ({ config }) => {
     e.preventDefault();
     try {
       
-      const response = await axios.post('http://localhost:3002/formData', values);
+      const response = await axios.post('http://localhost:3001/formData', values);
       console.log('Data sent:', response.data); 
     
     } catch (error) {

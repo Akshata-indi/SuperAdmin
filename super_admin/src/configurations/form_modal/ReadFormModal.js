@@ -18,10 +18,10 @@ const ReadFormModal = ({config, inputconfig}) => {
       {config.map((modal) => (
         <button
           key={modal.id}
-          className="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
+          className="px-6 py-1 text-white bg-blue-500 rounded-md hover:bg-blue-600"
           onClick={() => setOpenModal(modal)}
         >
-          Open {modal.title}
+          {modal.title}
         </button>
       ))}
 

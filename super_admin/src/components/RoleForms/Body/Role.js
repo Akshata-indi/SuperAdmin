@@ -25,7 +25,7 @@ const Role = () => {
       <Fmodal configs={roleModal} iconfig={rolemodalData} />
       </div>
 
-      <div className="roleform bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] overflow-y-auto">
+      <div className="roleform bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] ">
         {/* <div className='bg-gray-100 shadow-sm h-[8vh]'> */}
         <div className='sidebar-and-content-container flex'>
           

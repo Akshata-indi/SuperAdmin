@@ -6,8 +6,6 @@ import { getApiUrl } from '../../../api/getApi/GetApi'
 import { USERS_API } from '../../../pages/userContent/UserConfig'
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent';
 import userDropdown from './userDropdown.json'
-import Modal from '../../../ui-configs/Modal/Modal';
-import userModal from './userModal.json'
 import { buttonData } from '../Body/buttonData'
 import ButtonComponent from '../../../ui-configs/Buttons/ButtonComponent'
 
@@ -28,10 +26,10 @@ const UserNav = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    
       fetchData();
       setIsLoading(false)
-    }, 2000);
+    
    
   }, []);
 
@@ -43,12 +41,12 @@ const UserNav = () => {
     //   {  name: 'Bob Johnson', email: 'aa@gmail.com' },
     // ];
 
-    //   console.log('role:',role)
+      console.log('role:',data)
     //   console.log('columnData:',columnData)
 
   return (
     <div>
-        <div className='dropdown-container pt-4 pl-8 flex'>
+        <div className='dropdown-container pt-2 pl-8 flex'>
           {/* <CustomDropdown items={dropDownData} /> */}
           <EDropComponent configs={userDropdown.config} />
           <ButtonComponent configs={buttonData} />

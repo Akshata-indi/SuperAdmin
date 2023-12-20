@@ -31,7 +31,7 @@ const ReadFormModal = ({config, inputconfig}) => {
           isOpen={openModal === modal}
           onClose={closeModal}
           config={modal}
-          backdropClass="bg-black opacity-50" // Add your custom classes for the backdrop here
+          // backdropClass="bg-black opacity-50" // Add your custom classes for the backdrop here
         >
           {/* Render FormComponent within the modal when open */}
           {openModal === modal && <FormComponent config={inputconfig}/>} 

@@ -8,7 +8,7 @@ import Role from '../../components/RoleForms/Body/Role'
 const Roles = () => {
   return (
     <div>
-       <BodyContent content={Role}/>
+       <BodyContent content={RoleComponent}/>
     </div>
   )
 }

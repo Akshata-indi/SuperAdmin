@@ -16,7 +16,6 @@ import TimeComponent from '../../ui-configs/time/TimeComponent';
 const FormComponent = ({ config }) => {
   const [values, setValues] = useState([]);
   
-  
   const handleChange = (name, value) => {
     
     setValues({ ...values, [name]: value });
@@ -26,7 +25,7 @@ const FormComponent = ({ config }) => {
     e.preventDefault();
     try {
       
-      const response = await axios.post('http://localhost:3001/formData', values);
+      const response = await axios.post('http://192.168.0.107:8080/api/createRole/Role', values);
       console.log('Data sent:', response.data); 
     
     } catch (error) {

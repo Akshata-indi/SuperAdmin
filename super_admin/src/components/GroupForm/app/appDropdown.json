@@ -2,7 +2,7 @@
     "config": [
         {
             "drop_item": "",
-            "drop_placeholder": "Select apps to add to the role",
+            "drop_placeholder": "Select apps to add to the group",
             "drop_down_css": "style3"
         },
         {

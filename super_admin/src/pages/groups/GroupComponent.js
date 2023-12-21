@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+// eslint-disable-next-line
 import { getApiUrl } from '../../api/getApi/GetApi'
 import { GROUP_API } from './GroupConfig'
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -16,11 +17,12 @@ import TableComponent from '../../configurations/tables/TableComponent'
 
 const GroupComponent = () => {
   const [data, setData] = useState([])
+  // eslint-disable-next-line
   const [isLoading, setIsLoading] = useState(true)
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://192.168.0.144:8080/api/getAll/Group/getall");
+      const response = await axios.get("http://192.168.0.104:8081/api/getAll/Group/getall");
       console.log('API Response123:', response.data);
 
       setData(response.data);

@@ -42,6 +42,7 @@ const FormComponent = ({ config }) => {
               <TextComponent
                 label={field.label}
                 name={field.label}
+                placeholder={field.placeholder}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]} // Access textStyle.textcss
@@ -51,6 +52,7 @@ const FormComponent = ({ config }) => {
               <DateComponent
                 label={field.label}
                 name={field.label}
+                placeholder={field.placeholder}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -60,6 +62,7 @@ const FormComponent = ({ config }) => {
               <EmailComponent
                 label={field.label}
                 name={field.label}
+                placeholder={field.placeholder}
                 value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -113,6 +116,7 @@ const FormComponent = ({ config }) => {
             {field.type === 'time' && (
               <TimeComponent
                 label={field.label}
+                placeholder={field.placeholder}
                 value={config[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
@@ -129,6 +133,7 @@ const FormComponent = ({ config }) => {
             {field.type === 'textarea' && (
               <TextareaComponent
                 label={field.label}
+                placeholder={field.placeholder}
                 value={config[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}

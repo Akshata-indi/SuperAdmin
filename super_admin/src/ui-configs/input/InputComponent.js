@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-const InputComponent = ({ label, value, onChange, textcss }) => {
+const InputComponent = ({ label, value, onChange, textcss,placeholder }) => {
    
   return (
     <div>
@@ -10,6 +10,7 @@ const InputComponent = ({ label, value, onChange, textcss }) => {
       <input
         type="text"
         value={value}
+        placeholder={placeholder}
         onChange={onChange}
         className={textcss}
       />

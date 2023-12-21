@@ -21,7 +21,7 @@ const ReadFormModal = ({config, inputconfig}) => {
           className="px-6 py-1 text-white bg-blue-500 rounded-md hover:bg-blue-600"
           onClick={() => setOpenModal(modal)}
         >
-          {modal.title}
+          {modal.openButton}
         </button>
       ))}
 

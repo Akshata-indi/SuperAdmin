@@ -14,7 +14,7 @@ const FormModal = ({ isOpen, onClose, config, children, backdropClass }) => {
           {/* Modal container with scrolling */}
           <div className={container}>
             <h2 className={title}>{config.title}</h2>
-            <hr class="h-px my-5 bg-gray-200 border-0 dark:bg-gray-400"></hr>
+            <hr class="h-px my-4 w-full bg-gray-100 border-0 dark:bg-gray-400"></hr>
             <p className={content}>{config.content}</p>
 
             {/* Render children passed to the modal */}

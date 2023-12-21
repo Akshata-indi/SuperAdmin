@@ -5,9 +5,20 @@
 
     "type": "text",
     
-    "placeholder": "First Name",
+    "placeholder": "Enter Role Name",
     
-    "textcss": "boxInput"   
+    "textcss": "boxInput2"   
+    },
+
+    {
+    "label": "Description",
+    
+    "type": "textarea",
+        
+    "placeholder": "Enter Description",
+        
+    "textcss": "boxInput2"   
     }
+    
 
 ]

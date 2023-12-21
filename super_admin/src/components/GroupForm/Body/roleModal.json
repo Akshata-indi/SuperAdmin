@@ -1,19 +1,13 @@
 [
   {
     "id": "modal",
-    "title": "Add new Role",
+    "title": "Add new Group",
     "content": "",
-  
-
-    "openButton": " + Create new Role",
-
-
+    "openButton": " + Create new Group",
     "buttons": {
       "create": "Create",
       "cancel": "Cancel"
     },
-
     "modalcss": "style1"
-    
   }
 ]

@@ -1,7 +1,7 @@
 [
     {
-        "name": "Create new Role",
-        "label": " + Create new Role",
+        "name": "Create new Group",
+        "label": " + Create new Group",
         "type": "button",
         "buttoncss": "Primary"
     }

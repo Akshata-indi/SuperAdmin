@@ -1,0 +1,8 @@
+[
+    {
+        "label": "groupName",
+        "type": "text",
+        "placeholder": "First Name",
+        "textcss": "boxInput"
+    }
+]

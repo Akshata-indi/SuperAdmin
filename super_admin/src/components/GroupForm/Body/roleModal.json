@@ -1,7 +1,7 @@
 [
   {
     "id": "modal",
-    "title": "+ Create new Role",
+    "title": "Add new Role",
     "content": "",
   
 
@@ -13,8 +13,7 @@
       "cancel": "Cancel"
     },
 
-    "modalcss": "style2"
+    "modalcss": "style1"
     
   }
-  
 ]

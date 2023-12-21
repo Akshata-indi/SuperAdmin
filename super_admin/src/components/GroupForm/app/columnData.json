@@ -1,0 +1,15 @@
+[
+    {
+      "name": "App name",
+      "label": "App name",
+      "dataType": "number",
+      "cssClass": "style6"
+    },
+    {
+      "name": "permissions",
+      "label": "Permissions",
+      "dataType": "string",
+      "cssClass": "style6"
+    }
+  ]
+  

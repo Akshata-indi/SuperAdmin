@@ -3,7 +3,7 @@ import Nav from '../Navbar/Nav';
 import rolemenuData from './rolemenuData.json'
 import rolenavData from './rolenavdata.json'
 import Sidebar from '../../../configurations/navigation/Sidebar';
-import Modal from '../../../ui-configs/Modal/Modal'
+import Modal from '../../../ui-configs/modal/Modal'
 import roleModal from './roleModal.json'
 import Header from '../header/Header';
 import AppNav from '../app/AppNav'

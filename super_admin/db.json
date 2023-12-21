@@ -3,6 +3,10 @@
     {
       "id": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45917d208af5a8d8017a334a248c35c2d6d195e3
       "name": "shashank",
       "email": "sha@gmail.com"
     },
@@ -24,14 +28,20 @@
     }
     
    
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 45917d208af5a8d8017a334a248c35c2d6d195e3
       "name": "shashank"
     },
     {
       "id": 2,
       "name": "usha"
     }
+<<<<<<< HEAD
 >>>>>>> 3f9a949057d6b1eb52f60885b55814641567e664
+=======
+>>>>>>> 45917d208af5a8d8017a334a248c35c2d6d195e3
   ],
   "posts": [
     {
@@ -105,19 +115,27 @@
       "Last Name": "mnfd v",
       "id": 7
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 45917d208af5a8d8017a334a248c35c2d6d195e3
     },
+
     {
       "undefined": "fdjvhfdfjd",
       "id": 8
     }
   ],
   "inputData": [
+<<<<<<< HEAD
     {
       "First Name": "abc",
       "id": 1
 >>>>>>> 3f9a949057d6b1eb52f60885b55814641567e664
     },
+=======
+
+>>>>>>> 45917d208af5a8d8017a334a248c35c2d6d195e3
     {
       "name": "vc",
       "email": "vc@gmail.com",

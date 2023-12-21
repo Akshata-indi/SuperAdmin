@@ -16,7 +16,7 @@ const Input = ({ config }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/inputData', inputValues);
+      const response = await axios.post('http://localhost:3000/users', inputValues);
       console.log('Data sent:', response.data);
       // Optionally, you can handle success here
     } catch (error) {
@@ -34,9 +34,11 @@ const Input = ({ config }) => {
           value={inputValues[input.label] || ''}
           onChange={(e) => handleChange(e, input.label)}
           textcss={InputStyle[input.textcss]}
+          type={input.type}
         />
       ))}
-      <button onClick={handleSubmit}>Submit</button>
+      <button className='px-8 py-2 text-sm text-white bg-blue-500 rounded-md border-2 hover:bg-blue-600 fixed bottom-10 right-0 mb-38 mr-8' onClick={handleSubmit}>Invite Users</button>
+      
 
     </div>
   );

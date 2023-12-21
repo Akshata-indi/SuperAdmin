@@ -15,7 +15,7 @@ const FormModal = ({Configs}) => {
       {Configs.map((modal) => (
         <button
           key={modal.id}
-          className="px-8 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-700"
+          className="px-8 py-1  text-white bg-blue-500 rounded-md hover:bg-blue-700"
           onClick={() => setOpenModal(modal)}
         >
           {modal.openButton}

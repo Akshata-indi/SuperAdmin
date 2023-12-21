@@ -1,19 +1,30 @@
 {
-
- "users" : [
-  {
-    "id": 1, 
-    "name":"shashank"
-  },
-  {
-    "id":2,
-    "name":"usha"
-  }
- ]
-}
-
+  "users": [
+    {
+      "id": 1,
+      "name": "shashank",
+      "email": "sha@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "usha",
+      "email": "ush@gmail.com"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "sourabh",
+      "email": "sourabh@gmail.com",
+      "password": "7878",
+      "id": 4
+    }
+    
+   
+  ],
   "posts": [
-
     {
       "id": 1,
       "title": "json-server",
@@ -84,25 +95,78 @@
       "First Name": "nfd v",
       "Last Name": "mnfd v",
       "id": 7
-    }
-  ],
-  "inputData": [
-    {
-      "First Name": "abc",
-      "id": 1
     },
     {
-      "First Name": "abc",
-      "id": 2
+      "name": "vc",
+      "email": "vc@gmail.com",
+      "password": "2",
+      "id": 8
     },
     {
-      "First Name": "abc",
-      "id": 3
+      "name": "vc",
+      "email": "vc@gmail.com",
+      "password": "252",
+      "id": 9
     },
     {
-      "First Name": "abc",
-      "id": 4
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 10
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 11
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 12
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 13
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 14
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 15
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 16
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 17
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 18
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 19
     }
   ]
 }
-

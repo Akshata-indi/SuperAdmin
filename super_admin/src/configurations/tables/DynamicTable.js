@@ -1,11 +1,12 @@
 import React from 'react';
 
 import TableStyle from './TableStyle'
-// import { tableContent } from './Tabledata';
+
 
 function DynamicTable({ config, data }) {
   return (
-    <table className=' mx-4' >
+    
+    <table className='mx-4  ' >
       <thead className=''>
         <tr >
           {config.map((column) => (
@@ -24,10 +25,19 @@ function DynamicTable({ config, data }) {
                 {column.dataType === 'number' ? parseFloat(row[column.name]).toFixed() : row[column.name]}
               </td>
             ))}
+            <td className='border-b-2'>
+            <button
+                                                      // onClick={() => deleteUser(index)}
+                 className="text-red-600 mx-20 px-8 py-1 border border-red-100 text-sm rounded-md bg-red-50 "
+                >
+          Archive
+            </button>
+          </td>
           </tr>
         ))}
       </tbody>
     </table>
+  
   );
 }
 

@@ -1,0 +1,13 @@
+[
+
+    {
+    "label": "roleName",
+
+    "type": "text",
+    
+    "placeholder": "First Name",
+    
+    "textcss": "boxInput"   
+    }
+
+]

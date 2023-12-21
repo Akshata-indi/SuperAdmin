@@ -5,7 +5,9 @@
             "drop_placeholder": "Select users to add to the role",
             "drop_down_css": "style3"
         },
-        
+        {
+            "drop_item": ""
+        },
         {
             "drop_item": ""
         }

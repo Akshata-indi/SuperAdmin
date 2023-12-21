@@ -2,10 +2,12 @@
     "config": [
         {
             "drop_item": "",
-            "drop_placeholder": "Select users to add to the role",
+            "drop_placeholder": "Select apps to add to the role",
             "drop_down_css": "style3"
         },
-        
+        {
+            "drop_item": ""
+        },
         {
             "drop_item": ""
         }

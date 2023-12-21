@@ -2,6 +2,7 @@
   "users": [
     {
       "id": 1,
+<<<<<<< HEAD
       "name": "shashank",
       "email": "sha@gmail.com"
     },
@@ -23,6 +24,14 @@
     }
     
    
+=======
+      "name": "shashank"
+    },
+    {
+      "id": 2,
+      "name": "usha"
+    }
+>>>>>>> 3f9a949057d6b1eb52f60885b55814641567e664
   ],
   "posts": [
     {
@@ -95,6 +104,19 @@
       "First Name": "nfd v",
       "Last Name": "mnfd v",
       "id": 7
+<<<<<<< HEAD
+=======
+    },
+    {
+      "undefined": "fdjvhfdfjd",
+      "id": 8
+    }
+  ],
+  "inputData": [
+    {
+      "First Name": "abc",
+      "id": 1
+>>>>>>> 3f9a949057d6b1eb52f60885b55814641567e664
     },
     {
       "name": "vc",
@@ -167,6 +189,48 @@
       "email": "Us@gmail.com",
       "password": "jdj ndn",
       "id": 19
+    }
+  ],
+  "roles": [
+    {
+      "roleId": 102,
+      "roleName": "Role2",
+      "description": "Description 2"
+    },
+    {
+      "roleId": 101,
+      "roleName": "Role 1",
+      "description": "Description "
+    },
+    {
+      "roleId": 103,
+      "roleName": "Role 3",
+      "description": "Description 3"
+    },
+    {
+      "roleId": 104,
+      "roleName": "Role 4",
+      "description": "Description 4"
+    },
+    {
+      "roleId": 105,
+      "roleName": "Role 5",
+      "description": "Description 5"
+    },
+    {
+      "roleId": 106,
+      "roleName": "Role 6",
+      "description": "Description 6"
+    },
+    {
+      "roleId": 107,
+      "roleName": "Role 7",
+      "description": "Description 7"
+    },
+    {
+      "roleId": 108,
+      "roleName": "Role 8",
+      "description": "Description 8"
     }
   ]
 }

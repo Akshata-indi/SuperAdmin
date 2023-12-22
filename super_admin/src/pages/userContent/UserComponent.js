@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { getApiUrl } from '../../services/getApi/GetApi'
@@ -15,17 +16,32 @@ import SearchInputConfig from '../../configurations/search/SearchInputConfig.jso
 import TableComponent from '../../configurations/tables/TableComponent'
 
 
+=======
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { getApiUrl } from '../../api/getApi/GetApi';
+import { Button1, USERS_API } from './UserConfig';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import FormModal from '../../components/userForm/modalForm/FormModal';
+import modalContent from './UserConfig';
+import SearchableComp from '../../configurations/search/SearchableComp';
+import SearchInputConfig from '../../configurations/search/SearchInputConfig.json';
+import TableComponent from '../../configurations/tables/TableComponent';
+import EDropComponent from '../../components/NewGroupForms/EmptyDropDown/EDropComponent';
+import { drpdwncontent, tabledata } from './UserConfig';
+>>>>>>> 8158abdc5a5126487594d7a4b72d7ef903cde572
 
 
 const UserComponent = () => {
-  const [data, setData] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  const [data, setData] = useState([]);
+ 
 
   const fetchData = async () => {
     try {
       const response = await axios.get(getApiUrl(USERS_API));
+      // const response = await axios.get("http://192.168.0.107:8080/api/getAll/User/getall");
       console.log('API Response:', response.data);
-
       setData(response.data);
     } catch (error) {
       console.error(`Error fetching ${USERS_API} data:`, error);
@@ -33,66 +49,38 @@ const UserComponent = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      fetchData();
-      setIsLoading(false)
-    }, 2000);
-   
+    fetchData();
   }, []);
 
-  console.log("oooooooooooooooo")
-  console.log(data)
-  return (
-    <div >
+  
 
-      <div className='btn-container mb-2 mx-8 flex justify-end mr-20 my-12'>
+  
+
+  return (
+    <div className='w-full'>
+      <div className='btn-container mb-1 flex justify-end mr-16 my-8'>
         <FormModal Configs={modalContent} />
       </div>
 
-      <form className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded">
-        <div className=' bg-gray-100 shadow-sm h-[8vh]   '>
+      <form className="bg-white border w-[88%] mx-20 border-gray-300 shadow-sm rounded-md">
+      <div className='bg-gray-100 h-[9vh] flex items-center'>
+      <p className='mx-6 text-xs font-normal text-gray-700'>Showing </p>
 
-          <div className='flex justify-start '>
+<div className='w-[60%] '>
+  <EDropComponent configs={drpdwncontent} />
+</div>
 
-          <CustomDropdown items={dropDownData} />
-
-          <div className='flex justify-end  ml-24 '>
-
-            <SearchableComp SearchConfig={SearchInputConfig} />
-          </div> 
+<div className='ml-auto my-10'>
+  <SearchableComp SearchConfig={SearchInputConfig} data={data} />
+</div>
+</div>
+        <div className="table-container h-[48vh]  overflow-y-auto">
+          <TableComponent tableConfig={tabledata} data={data}  />
+          
         </div>
-
-        </div>
-        <div className=" ">
-          <TableComponent tableConfig={tableContent} data={data}/>
-
-
-
-         
-        </div>
-      </form >
-
-
-
+      </form>
     </div>
-  )
-}
-  
+  );
+};
 
-
-export default UserComponent
-
-
-
-      // {/* <ul>
-      //   {
-      //     isLoading ?
-      //     <Skeleton count={10} height={20} /> 
-      //     :
-      //     <Table tableConfig={tableContent} data1={data}/>
-      //     // data.map(user => (
-      //       //   <li key={user.id}>{user.name}</li>))
-      //   }
-      // </ul> */}
-      //     {/* <UserFormBody data={data}/> */}
-    
+export default UserComponent;

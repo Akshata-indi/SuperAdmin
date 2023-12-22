@@ -1,11 +1,12 @@
 import React from 'react';
 
-const OptionsComponent = ({ label, value, options, onChange, textcss }) => {
+const OptionsComponent = ({ label, value, options, onChange, textcss,placeholder }) => {
   return (
     <div>
       <label>{label}</label>
       <select 
-        value={value} 
+        value={value}
+        placeholder={placeholder} 
         onChange={onChange}
         className={textcss}
         >

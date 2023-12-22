@@ -4,16 +4,15 @@
     "title": "Add new Role",
     "content": "",
   
-
     "openButton": " + Create new Role",
-
 
     "buttons": {
       "create": "Create",
       "cancel": "Cancel"
     },
 
-    "modalcss": "style1"
+    "modalcss": "style2"
     
   }
+  
 ]

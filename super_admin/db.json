@@ -1,7 +1,229 @@
 {
+  "users": [
+    {
+      "id": 1,
+
+      "name": "shashank",
+      "email": "sha@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "usha",
+      "email": "ush@gmail.com"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "sourabh",
+      "email": "sourabh@gmail.com",
+      "password": "7878",
+      "id": 4
+    }
+    
+   
+      "name": "shashank"
+    },
+    {
+      "id": 2,
+      "name": "usha"
+    }
+  ],
   "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    },
+    {
+      "title": "json",
+      "author": "typi",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "formData": [
+    {
+      "title": "json",
+      "author": "typi",
+      "id": 1
+    },
+    {
+      "fristname": "json",
+      "lastname": "typi",
+      "email": "ss@gmail.com",
+      "id": 2
+    },
+    {
+      "Email": "pole.shashank@infokalash.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 3
+    },
+    {
+      "First Name": "fvfv",
+      "Last Name": "fvfv",
+      "Email": "saba@gmail.com",
+      "Password": "kjhfvr",
+      "id": 4
+    },
+    {
+      "First Name": "fvfv",
+      "Last Name": "fvfv",
+      "Email": "saba@gmail.com",
+      "Password": "kjhfvr",
+      "id": 5
+    },
+    {
+      "Email": "ee@gmail.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 6
+    },
+    {
+      "Email": "ee@gmail.com",
+      "Password": "gfbkjng",
+      "First Name": "nfd v",
+      "Last Name": "mnfd v",
+      "id": 7
+    },
+
+    {
+      "undefined": "fdjvhfdfjd",
+      "id": 8
+    }
+  ],
+  "inputData": [
+
+    {
+      "name": "vc",
+      "email": "vc@gmail.com",
+      "password": "2",
+      "id": 8
+    },
+    {
+      "name": "vc",
+      "email": "vc@gmail.com",
+      "password": "252",
+      "id": 9
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 10
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 11
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 12
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 13
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 14
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 15
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 16
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 17
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 18
+    },
+    {
+      "name": "usha",
+      "email": "Us@gmail.com",
+      "password": "jdj ndn",
+      "id": 19
+    }
+  ],
+  "roles": [
+    {
+      "roleId": 102,
+      "roleName": "Role2",
+      "description": "Description 2"
+    },
+    {
+      "roleId": 101,
+      "roleName": "Role 1",
+      "description": "Description "
+    },
+    {
+      "roleId": 103,
+      "roleName": "Role 3",
+      "description": "Description 3"
+    },
+    {
+      "roleId": 104,
+      "roleName": "Role 4",
+      "description": "Description 4"
+    },
+    {
+      "roleId": 105,
+      "roleName": "Role 5",
+      "description": "Description 5"
+    },
+    {
+      "roleId": 106,
+      "roleName": "Role 6",
+      "description": "Description 6"
+    },
+    {
+      "roleId": 107,
+      "roleName": "Role 7",
+      "description": "Description 7"
+    },
+    {
+      "roleId": 108,
+      "roleName": "Role 8",
+      "description": "Description 8"
+    }
   ]
 }

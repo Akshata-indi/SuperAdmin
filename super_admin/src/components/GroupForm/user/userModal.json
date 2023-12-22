@@ -1,0 +1,13 @@
+[
+  {
+    "id": "modal",
+    "title": "Add new Group",
+    "content": "",
+    "openButton": " + Add users",
+    "buttons": {
+      "create": "Create",
+      "cancel": "Cancel"
+    },
+    "modalcss": "style1"
+  }
+]

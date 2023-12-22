@@ -1,0 +1,24 @@
+[
+
+    {
+    "label": "roleName",
+
+    "type": "text",
+    
+    "placeholder": "Enter Role Name",
+    
+    "textcss": "boxInput2"   
+    },
+
+    {
+    "label": "Description",
+    
+    "type": "textarea",
+        
+    "placeholder": "Enter Description",
+        
+    "textcss": "boxInput2"   
+    }
+    
+
+]

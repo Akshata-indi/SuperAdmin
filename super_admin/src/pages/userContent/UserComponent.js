@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { getApiUrl } from '../../api/getApi/GetApi'
+import { getApiUrl } from '../../services/getApi/GetApi'
 import { USERS_API } from './UserConfig'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'

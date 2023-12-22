@@ -1,11 +1,13 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { DASHBOARD_SIDEBAR_LINKS } from "../sidebarConfigs/SettingmenuConfig";
+import { useStyleContext } from "../menusContext/StyleContext";
 
 const SettingsMenus = () => {
-const activeLink = "text-black mt-2 rounded-md bg-[#E6E8EB] ";
+  const { activeLink, normalLink, button } = useStyleContext();
 
-const normalLink = "mt-2 ";
+// const activeLink = "rounded-md text-[13px] py-2 bg-[#E6E8EB] ";
+// const normalLink = "rounded-md w-60 py-2 my-1 hover:bg-gray-100 text-[13px]";
   
   return (
     <>
@@ -14,11 +16,11 @@ const normalLink = "mt-2 ";
         <ul className="   w-[281px]  border-r   ">
           {DASHBOARD_SIDEBAR_LINKS.default.submenus.map((items) => (
             
-            <Link to={items.path} className={({isActive}) => 
+            <NavLink to={items.path} className={({isActive}) => 
               isActive ? activeLink : normalLink
              }>
-              <button className=" rounded-md  w-60 mx-6 text-left p-1.5  hover:bg-gray-100  text-[13px]">{items.label}</button>
-            </Link>
+              <button className={button}>{items.label}</button>
+            </NavLink>
           ))}
         </ul>
       {/* </div> */}

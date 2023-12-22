@@ -1,7 +1,4 @@
-export const USERS_API = 'users';
-
-
-
+export const USERS_API = '/User/getAll';
 
 export const ButtonContent = [
   {

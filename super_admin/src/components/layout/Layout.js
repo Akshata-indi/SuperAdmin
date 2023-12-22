@@ -1,19 +1,15 @@
 import Iconbar from '../../components/Iconbar/Iconbar'
-// import SidebarMenu from "../configuration/sidebarMenus/SidebarMenu";
 
-import routesConfig from '../../routing/RoutingConfig'
+
 import Header2 from '../../configurations/Header/Header2'
 
-import { Routes, Route } from 'react-router-dom'
+import StyleProvider from '../iconContext/StyleProvider'
+
+import { Routes, Route, Outlet } from 'react-router-dom'
+// import StyleProvider from '../../components/menusContext/StyleProvider'
 
 const Layout = () => {
-  const renderRoutes = (routes) => {
-    return routes.map((route) => (
-      <Route key={route.path} path={route.path} element={route.element} index={route.index}>
-        {route.children && renderRoutes(route.children)}
-      </Route>
-    ))
-  };
+  
   return (
     <>
     <div className=" flex ">
@@ -25,10 +21,10 @@ const Layout = () => {
         <Header2 />
       </div>
     
-      <div className='  flex w-[1467px] h-[690px] border-r border-gray-400'>
+      <div className='  flex w-[1487px] h-[690px] border-r border-gray-400'>
+  <Outlet />
 
-     <Routes>{renderRoutes(routesConfig)}</Routes>
-     
+     {/* <Routes>{renderRoutes(routesConfig)}</Routes> */}
       </div>
     
       </div>

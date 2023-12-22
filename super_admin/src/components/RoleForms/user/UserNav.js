@@ -4,11 +4,11 @@ import columnData from './columnData.json'
 // import CustomDropdown from '../../NewGroupForms/Drop Down Menu/CustomDropdown';
 // import dropDownData from '../../NewGroupForms/Drop Down Menu/DropDown.json'
 import axios from 'axios'
-import { getApiUrl } from '../../../api/getApi/GetApi'
+import { getApiUrl } from '../../../services/getApi/GetApi'
 import { USERS_API } from '../../../pages/userContent/UserConfig'
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent';
 import userDropdown from './userDropdown.json'
-import Modal from '../../../ui-configs/Modal/Modal';
+import Modal from '../../../ui-configs/modal/Modal'
 import userModal from './userModal.json'
 
 const UserNav = () => {

@@ -16,7 +16,7 @@ const ButtonConfig = [
         type: 'button',
         buttoncss: 'Primary',
         icon: {
-            component: 'FaCheck',
+            component: <FaCheck/>,
             position: 'right',
             render: () => {
                 const IconComponent = iconComponents['FaCheck'];

@@ -1,7 +1,7 @@
 import React from 'react'
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent'
 import appDropdown from './appDropdown.json'
-import Modal from '../../../ui-configs/Modal/Modal'
+import Modal from '../../../ui-configs/modal/Modal'
 import appModal from './appModal.json'
 // import CustomDropdown from '../../../ui-configs/Dropdown/CustomDropdown'
 // import dropDownData from './dropDownData.json'

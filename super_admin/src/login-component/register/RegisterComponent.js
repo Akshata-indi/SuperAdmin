@@ -1,36 +1,41 @@
 import React from 'react';
 import * as Yup from 'yup';
-import axios from 'axios';
 // import { postApiUrl } from '../../services/PostApi/PostApi';
 import Input from '../dynamicInput/Input';
 import Checkbox from '../../ui-configs/checkbox/Checkbox';
 import { Link } from 'react-router-dom';
 import Button from '../../ui-configs/Buttons/Button'
-import { RegisterButtonConfig, CheckboxConfig } from './RegisterConfig';
+import { RegisterButtonConfig, CheckboxConfig, RegisterInputConfig } from './RegisterConfig';
 import { useFormik } from 'formik';
 import { postEndpoint } from './RegisterConfig'
 import { postApi } from '../../services/ServiceApi'
 
-const RegisterComponent = ({ config }) => {
+const RegisterComponent = () => {
   const validationSchema = Yup.object(
     Object.fromEntries(
-      config.map((input) => [input.label, Yup.string().required(`${input.label} is required`)])
+      RegisterInputConfig.map((input) => [input.label, Yup.string().required(`${input.label} is required`)])
     )
   );
 
   const formik = useFormik({
-    initialValues: Object.fromEntries(config.map((input) => [input.label, ''])),
+    initialValues: Object.fromEntries(RegisterInputConfig.map((input) => [input.label, ''])),
     validationSchema,
 
     onSubmit: async (values) => {
 
       postApi(postEndpoint, values)
-      .then((result) => {
-       console.log('POST request result:', result);
-      })
-      .catch((error) => {
-        console.error('Error in POST request:', error);
-      });
+        .then((result) => {
+          console.log('POST request result:', result);
+          if (result.success) {
+            alert('Registered successfully.');
+            formik.resetForm();
+          } else {
+            alert('Failed to register. Please try again.');
+          }
+        })
+        .catch((error) => {
+          console.error('Error in POST request:', error);
+        });
 
       // try {
       //   const response = await axios.post("http://localhost:3003/users", values);
@@ -60,7 +65,7 @@ const RegisterComponent = ({ config }) => {
           <div className="grid grid-cols-1 text-xs">
             <div className="relative">
 
-              <Input config={config} formik={formik} />
+              <Input config={RegisterInputConfig} formik={formik} />
 
               <Checkbox CheckboxConfig={CheckboxConfig} />
 

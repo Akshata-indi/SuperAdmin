@@ -6,7 +6,7 @@ const Input = ({ config, formik }) => {
   return (
     <>
     <div>
-        <InputComponent  config = {RegisterInputConfig } formik = {formik} />
+        <InputComponent  config = {config } formik = {formik} />
     </div>
     </>
   )

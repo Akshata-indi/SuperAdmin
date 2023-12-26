@@ -1,11 +1,11 @@
 //Modal.js
 import React, { useState } from 'react';
 import ModalComponent from './ModalComponent';
-<<<<<<< HEAD
 
-=======
+
+
 // import modalData from './modalData';
->>>>>>> 8158abdc5a5126487594d7a4b72d7ef903cde572
+
 
 const Modal = ({Config}) => {
   const [openModal, setOpenModal] = useState(null);

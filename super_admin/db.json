@@ -1,34 +1,12 @@
 {
   "users": [
     {
-      "id": 1,
-
-      "name": "shashank",
-      "email": "sha@gmail.com"
-    },
-    {
-      "id": 2,
-      "name": "usha",
-      "email": "ush@gmail.com"
-    },
-    {
-      "name": "abc",
-      "email": "abc@gmail.com",
-      "id": 3
-    },
-    {
-      "name": "sourabh",
-      "email": "sourabh@gmail.com",
-      "password": "7878",
-      "id": 4
-    }
-    
-   
-      "name": "shashank"
-    },
-    {
-      "id": 2,
-      "name": "usha"
+      "name": "sssss",
+      "lastName": "dd",
+      "email": "dd@d.com",
+      "password": "777",
+      "confirmPassword": "777",
+      "id": 1
     }
   ],
   "posts": [
@@ -103,14 +81,12 @@
       "Last Name": "mnfd v",
       "id": 7
     },
-
     {
       "undefined": "fdjvhfdfjd",
       "id": 8
     }
   ],
   "inputData": [
-
     {
       "name": "vc",
       "email": "vc@gmail.com",

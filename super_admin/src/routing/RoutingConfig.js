@@ -6,12 +6,17 @@ import User from '../pages/userContent/User'
 import Groups from '../pages/groups/Groups';
 import Roles from '../pages/roles/Roles';
 import Layout from '../components/layout/Layout'
-import Login2 from "../login-components/login2/Login2"
+import Login from "../login-component/login/Login"
+import Register from '../login-component/register/Register'
 
 const routesConfig = [
   {
     path : "/",
-    element : <Login2/>
+    element : <Login/>
+  },
+  {
+    path : "/register",
+    element : <Register/>
   },
   {
     path : "layout",

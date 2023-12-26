@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 // eslint-disable-next-line
-import { getApiUrl } from '../../api/getApi/GetApi'
+import { getApiUrl } from '../../services/getApi/GetApi'
 import { GROUP_API } from './GroupConfig'
 import 'react-loading-skeleton/dist/skeleton.css'
-import { tableContent } from '../../components/GroupForm/Body/roleData'
+import { tableContent } from '../../components/groupForm/Body/roleData'
 import Fmodal from '../../configurations/form_modal/Fmodal'
-import roleModal from '../../components/GroupForm/Body/roleModal.json'
-import rolemodalData from '../../components/GroupForm/Body/rolemodalData.json'
+import roleModal from '../../components/groupForm/Body/roleModal.json'
+import rolemodalData from '../../components/groupForm/Body/rolemodalData.json'
 import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
 import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
 import SearchableComp from '../../configurations/search/SearchableComp'
 import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 import TableComponent from '../../configurations/tables/TableComponent'
+
 
 
 const GroupComponent = () => {

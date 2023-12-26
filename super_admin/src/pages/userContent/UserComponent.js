@@ -1,25 +1,24 @@
-<<<<<<< HEAD
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import { getApiUrl } from '../../services/getApi/GetApi'
-import { USERS_API } from './UserConfig'
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
-// import Table from '../../configurations/tables/Table'
-import  {tableContent}  from  '../../configurations/tables/Tabledata'
-import FormModal from '../../components/userForm/modalForm/FormModal'
-import modalContent from './UserConfig'
-import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
-import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
-import SearchableComp from '../../configurations/search/SearchableComp'
-import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
-import TableComponent from '../../configurations/tables/TableComponent'
+// import React from 'react'
+// import axios from 'axios'
+// import { getApiUrl } from '../../services/getApi/GetApi'
+// import { USERS_API } from './UserConfig'
+// import Skeleton from 'react-loading-skeleton'
+// import 'react-loading-skeleton/dist/skeleton.css'
+// // import Table from '../../configurations/tables/Table'
+// import  {tableContent}  from  '../../configurations/tables/Tabledata'
+// import FormModal from '../../components/userForm/modalForm/FormModal'
+// import modalContent from './UserConfig'
+// import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
+// import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
+// import SearchableComp from '../../configurations/search/SearchableComp'
+// import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
+// import TableComponent from '../../configurations/tables/TableComponent'
 
 
-=======
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { getApiUrl } from '../../api/getApi/GetApi';
+import { getApiUrl } from '../../services/getApi/GetApi';
 import { Button1, USERS_API } from './UserConfig';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
@@ -30,7 +29,7 @@ import SearchInputConfig from '../../configurations/search/SearchInputConfig.jso
 import TableComponent from '../../configurations/tables/TableComponent';
 import EDropComponent from '../../components/NewGroupForms/EmptyDropDown/EDropComponent';
 import { drpdwncontent, tabledata } from './UserConfig';
->>>>>>> 8158abdc5a5126487594d7a4b72d7ef903cde572
+
 
 
 const UserComponent = () => {

@@ -6,13 +6,13 @@ import { getApiUrl } from '../../../services/getApi/GetApi'
 import { USERS_API } from '../../../pages/userContent/UserConfig'
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent';
 import userDropdown from './userDropdown.json'
-<<<<<<< HEAD
+
 import Modal from '../../../ui-configs/modal/Modal'
 import userModal from './userModal.json'
-=======
+
 import { buttonData } from '../Body/buttonData'
 import ButtonComponent from '../../../ui-configs/Buttons/ButtonComponent'
->>>>>>> 8158abdc5a5126487594d7a4b72d7ef903cde572
+
 
 const UserNav = () => {
 

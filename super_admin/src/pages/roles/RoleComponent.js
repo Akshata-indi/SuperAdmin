@@ -1,6 +1,6 @@
   import React, { useEffect, useState } from 'react'
   import axios from 'axios'
-  import { getApiUrl } from '../../api/getApi/GetApi'
+  import { getApiUrl } from '../../services/getApi/GetApi'
   import { ROLE_API } from './RoleConfig'
   import 'react-loading-skeleton/dist/skeleton.css'
   import  {tableContent}  from  '../../components/RoleForms/Body/roleData'

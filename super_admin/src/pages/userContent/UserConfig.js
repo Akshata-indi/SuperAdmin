@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 export const USERS_API = '/User/getAll';
-=======
-export const USERS_API = 'users';
->>>>>>> 8158abdc5a5126487594d7a4b72d7ef903cde572
+
+
+
 
 export const ButtonContent = [
   {

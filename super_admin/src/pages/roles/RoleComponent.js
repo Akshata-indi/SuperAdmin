@@ -1,23 +1,24 @@
   import React, { useEffect, useState } from 'react'
   import axios from 'axios'
   import { getApiUrl } from '../../api/getApi/GetApi'
-  import { ROLE_API } from './RoleConfig'
+  import { ROLE_API , tableContent, roleModal, rolemodalData, dropDownData ,SearchInputConfig} from './RoleConfig'
   import 'react-loading-skeleton/dist/skeleton.css'
-  import  {tableContent}  from  '../../components/RoleForms/Body/roleData'
-  import Fmodal from '../../configurations/form_modal/Fmodal'
-  import roleModal from '../../components/RoleForms/Body/roleModal.json'
-  import rolemodalData from '../../components/RoleForms/Body/rolemodalData.json'
   import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
-  import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
   import SearchableComp from '../../configurations/search/SearchableComp'
-  import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
   import TableComponent from '../../configurations/tables/TableComponent'
+  import Fmodal from '../../configurations/form_modal/Fmodal'
+  
+  // import  {tableContent}  from  '../../components/RoleForms/Body/roleData'
+  // import roleModal from '../../components/RoleForms/Body/roleModal.json'
+  // import rolemodalData from '../../components/RoleForms/Body/rolemodalData.json'
+  // import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
+  // import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 
   const RoleComponent = () => {
     const [data, setData] = useState([])
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/roles");
+        const response = await axios.get("http://localhost:3000/roles");
         console.log('API Response123:', response.data);
 
         setData(response.data);

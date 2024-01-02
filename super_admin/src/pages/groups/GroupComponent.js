@@ -61,7 +61,7 @@ const GroupComponent = () => {
           <div className='flex justify-start'>
             <CustomDropdown items={dropDownData} />
             <div className='flex justify-end ml-24 '>
-              <SearchableComp SearchConfig={SearchInputConfig} />
+              {/* <SearchableComp SearchConfig={SearchInputConfig} /> */}
             </div>
           </div>
         </div>

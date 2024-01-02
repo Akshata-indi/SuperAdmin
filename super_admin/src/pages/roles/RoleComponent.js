@@ -10,7 +10,7 @@
   import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
   import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
   import SearchableComp from '../../configurations/search/SearchableComp'
-  import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
+ import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
   import TableComponent from '../../configurations/tables/TableComponent'
 
 
@@ -61,7 +61,7 @@
         <div className='flex justify-start'>
         <CustomDropdown items={dropDownData} />
         <div className='flex justify-end ml-24 '>
-          <SearchableComp SearchConfig={SearchInputConfig} />
+          {/* <SearchableComp SearchConfig={SearchInputConfig} /> */}
         </div>
       </div>
     </div>

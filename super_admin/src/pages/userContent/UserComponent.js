@@ -25,7 +25,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import FormModal from '../../components/userForm/modalForm/FormModal';
 import modalContent from './UserConfig';
 import SearchableComp from '../../configurations/search/SearchableComp';
-import SearchInputConfig from '../../configurations/search/SearchInputConfig.json';
+import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 import TableComponent from '../../configurations/tables/TableComponent';
 import EDropComponent from '../../components/NewGroupForms/EmptyDropDown/EDropComponent';
 import { drpdwncontent, tabledata } from './UserConfig';
@@ -34,25 +34,38 @@ import { drpdwncontent, tabledata } from './UserConfig';
 
 const UserComponent = () => {
   const [data, setData] = useState([]);
+  
+  const [searchData, setSearchData] = useState([]);
+  
  
-
   const fetchData = async () => {
     try {
       const response = await axios.get(getApiUrl(USERS_API));
-      // const response = await axios.get("http://192.168.0.107:8080/api/getAll/User/getall");
+      // const response = await axios.get("http://192.168.0.134:8080/api/getAll/User/getall");
       console.log('API Response:', response.data);
       setData(response.data);
+      setSearchData(response.data);
     } catch (error) {
       console.error(`Error fetching ${USERS_API} data:`, error);
     }
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  
+ 
 
   
-
+  useEffect(() => {
+    fetchData();
+    
+  }, []);
+  
+  const searchFun = (recsearchdata) =>{
+    setSearchData(recsearchdata)
+    
+  }
+  console.log("99999999999999999999")
+  console.log(searchData)
+ 
   
 
   return (
@@ -70,11 +83,11 @@ const UserComponent = () => {
 </div>
 
 <div className='ml-auto my-10'>
-  <SearchableComp SearchConfig={SearchInputConfig} data={data} />
+  <SearchableComp SearchConfig={SearchInputConfig}  data={data} searchFunrec={searchFun}/>
 </div>
 </div>
         <div className="table-container h-[48vh]  overflow-y-auto">
-          <TableComponent tableConfig={tabledata} data={data}  />
+          <TableComponent tableConfig={tabledata} data={searchData}   />
           
         </div>
       </form>

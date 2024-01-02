@@ -2,16 +2,30 @@
   import axios from 'axios'
 
   import { getApiUrl } from '../../api/getApi/GetApi'
-  import { ROLE_API , tableContent, roleModal, rolemodalData, dropDownData ,SearchInputConfig} from './RoleConfig'
-
-  import { getApiUrl } from '../../services/getApi/GetApi'
   import { ROLE_API } from './RoleConfig'
-
   import 'react-loading-skeleton/dist/skeleton.css'
-  import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
-  import SearchableComp from '../../configurations/search/SearchableComp'
-  import TableComponent from '../../configurations/tables/TableComponent'
+  import  {tableContent}  from  '../../components/RoleForms/Body/roleData'
   import Fmodal from '../../configurations/form_modal/Fmodal'
+  import roleModal from '../../components/RoleForms/Body/roleModal.json'
+  import rolemodalData from '../../components/RoleForms/Body/rolemodalData.json'
+  import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
+  import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
+  import SearchableComp from '../../configurations/search/SearchableComp'
+ import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
+  import TableComponent from '../../configurations/tables/TableComponent'
+
+
+  
+  // import { ROLE_API , tableContent, roleModal, rolemodalData, dropDownData ,SearchInputConfig} from './RoleConfig'
+
+  // import { getApiUrl } from '../../services/getApi/GetApi'
+  // import { ROLE_API } from './RoleConfig'
+
+  // import 'react-loading-skeleton/dist/skeleton.css'
+  // import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
+  // import SearchableComp from '../../configurations/search/SearchableComp'
+  // import TableComponent from '../../configurations/tables/TableComponent'
+  // import Fmodal from '../../configurations/form_modal/Fmodal'
   
   // import  {tableContent}  from  '../../components/RoleForms/Body/roleData'
   // import roleModal from '../../components/RoleForms/Body/roleModal.json'
@@ -59,7 +73,7 @@
         <div className='flex justify-start'>
           <CustomDropdown items={dropDownData} />
         <div className='flex justify-end ml-24 '>
-          <SearchableComp SearchConfig={SearchInputConfig} />
+          {/* <SearchableComp SearchConfig={SearchInputConfig} /> */}
         </div>
       </div>
     </div>

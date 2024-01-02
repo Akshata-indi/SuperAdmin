@@ -1,7 +1,6 @@
   import React, { useState, useEffect } from 'react';
   import axios from 'axios';
   import Nav from '../Navbar/Nav';
-  import rolemenuData from './rolemenuData.json'
   import rolenavData from './rolenavdata.json'
   import Sidebar from '../../../configurations/navigation/Sidebar';
   import roleModal from './roleModal.json'

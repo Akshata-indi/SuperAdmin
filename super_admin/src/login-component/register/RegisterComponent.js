@@ -26,7 +26,7 @@ const RegisterComponent = () => {
       postApi(postEndpoint, values)
         .then((result) => {
           console.log('POST request result:', result);
-          if (result.success) {
+          if (result) {
             alert('Registered successfully.');
             formik.resetForm();
           } else {

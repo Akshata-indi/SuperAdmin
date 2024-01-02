@@ -50,11 +50,7 @@ const UserComponent = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
   
-
-  
-
   return (
     <div className='w-full'>
       <div className='btn-container mb-1 flex justify-end mr-16 my-8'>

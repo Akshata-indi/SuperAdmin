@@ -1,0 +1,15 @@
+{
+    "config": [
+        {
+            "drop_item": "",
+            "drop_placeholder": "Select apps to add to the group",
+            "drop_down_css": "style3"
+        },
+        {
+            "drop_item": ""
+        },
+        {
+            "drop_item": ""
+        }
+    ]
+}

@@ -2,12 +2,22 @@ import React, {useEffect, useState } from 'react'
 import TableComponent from '../../../configurations/tables/TableComponent';
 import { columnData } from './columnData';
 import axios from 'axios'
+
 import { getApiUrl } from '../../../api/getApi/GetApi'
 import { ROLE_API } from '../../../pages/roles/RoleConfig'
+
+import { getApiUrl } from '../../../services/getApi/GetApi'
+import { USERS_API } from '../../../pages/userContent/UserConfig'
+
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent';
 import userDropdown from './userDropdown.json'
+
+import Modal from '../../../ui-configs/modal/Modal'
+import userModal from './userModal.json'
+
 import { buttonData } from '../Body/buttonData'
 import ButtonComponent from '../../../ui-configs/Buttons/ButtonComponent'
+
 
 const UserNav = () => {
 

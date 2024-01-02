@@ -1,12 +1,12 @@
 import React from 'react';
-import { ButtonConfig } from './ButtonConfig'; // Import named export 'ButtonConfig' (not default export)
+import { ButtonConfig } from './ButtonConfig';
 
 import ButtonComponent from './ButtonComponent';
 
-function Button() {
+function Button({ configs }) {
     return (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <ButtonComponent configs={ButtonConfig} />
+            <ButtonComponent configs={configs} />
         </div>
     );
 }

@@ -1,7 +1,12 @@
   import React, { useEffect, useState } from 'react'
   import axios from 'axios'
+
   import { getApiUrl } from '../../api/getApi/GetApi'
   import { ROLE_API , tableContent, roleModal, rolemodalData, dropDownData ,SearchInputConfig} from './RoleConfig'
+
+  import { getApiUrl } from '../../services/getApi/GetApi'
+  import { ROLE_API } from './RoleConfig'
+
   import 'react-loading-skeleton/dist/skeleton.css'
   import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
   import SearchableComp from '../../configurations/search/SearchableComp'

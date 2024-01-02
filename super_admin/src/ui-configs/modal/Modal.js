@@ -1,7 +1,11 @@
 //Modal.js
 import React, { useState } from 'react';
 import ModalComponent from './ModalComponent';
+
+
+
 // import modalData from './modalData';
+
 
 const Modal = ({Config}) => {
   const [openModal, setOpenModal] = useState(null);

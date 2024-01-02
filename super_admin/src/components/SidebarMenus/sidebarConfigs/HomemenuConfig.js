@@ -3,8 +3,7 @@ export const DASHBOARD_SIDEBAR_LINKS ={
         submenus: [
           {
             label: 'Home 1',
-            path:'home1',
-            classes: ' text-black hover:text-blue-500 font-normal mx-4  ',
+            path:'home1'
             
           },
           {

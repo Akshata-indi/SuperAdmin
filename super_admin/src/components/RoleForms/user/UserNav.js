@@ -1,9 +1,14 @@
 import React, {useEffect, useState } from 'react'
 import TableComponent from '../../../configurations/tables/TableComponent';
-import columnData from './columnData.json'
+import { columnData } from './columnData';
 import axios from 'axios'
+
+import { getApiUrl } from '../../../api/getApi/GetApi'
+import { ROLE_API } from '../../../pages/roles/RoleConfig'
+
 import { getApiUrl } from '../../../services/getApi/GetApi'
 import { USERS_API } from '../../../pages/userContent/UserConfig'
+
 import EDropComponent from '../../NewGroupForms/EmptyDropDown/EDropComponent';
 import userDropdown from './userDropdown.json'
 
@@ -17,26 +22,16 @@ import ButtonComponent from '../../../ui-configs/Buttons/ButtonComponent'
 const UserNav = () => {
 
   const [data, setData] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-
   const fetchData = async () => {
     try {
-      const response = await axios.get(getApiUrl(USERS_API));
-      console.log('API Response:', response.data);
+      const response = await axios.get("http://localhost:3001/roles");
+      console.log('API Response123:', response.data);
 
       setData(response.data);
     } catch (error) {
-      console.error(`Error fetching ${USERS_API} data:`, error);
+      console.error(`Error fetching ${ROLE_API} data:`, error);
     }
   };
-
-  useEffect(() => {
-    
-      fetchData();
-      setIsLoading(false)
-    
-   
-  }, []);
 
     // const role = [
     //   { name: 'John Doe', email: 'aa@gmail.com',  },

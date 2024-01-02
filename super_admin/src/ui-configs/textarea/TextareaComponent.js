@@ -4,11 +4,11 @@ const TextareaComponent = ({ label, value, onChange, textcss, placeholder }) => 
   return (
     <div>
       <label>{label}</label>
-      <textarea 
+      <textarea
         value={value}
-        placeholder={placeholder} 
+        placeholder={placeholder}
         onChange={onChange}
-        className={textcss} 
+        className={textcss}
       />
     </div>
   );

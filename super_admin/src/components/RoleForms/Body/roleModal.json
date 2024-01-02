@@ -7,7 +7,7 @@
     "openButton": " + Create new Role",
 
     "buttons": {
-      "create": "Create",
+      "create": " + Create",
       "cancel": "Cancel"
     },
 

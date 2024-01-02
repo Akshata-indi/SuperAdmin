@@ -1,4 +1,4 @@
-export const tableContent = [
+const tableContent = [
     {
         name: "id",
         label: "Role Id",
@@ -23,3 +23,4 @@ export const tableContent = [
     
     
   ];
+  export default tableContent;

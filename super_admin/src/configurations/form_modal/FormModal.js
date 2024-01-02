@@ -1,8 +1,15 @@
 import React from 'react';
 import formModalStyles from './formModalStyle'
+import FormComponent from '../../configurations/form/FormComponent'
 
-const FormModal = ({ isOpen, onClose, config, children, backdropClass }) => {
-  const { overlay, overlayBackground, container, title, content, closeButton } = formModalStyles[config.modalcss];
+const FormModal = ({ isOpen, onClose, config, children, backdropClass, handleSubmit  }) => {
+  const { overlay, overlayBackground, container, title, content, createbutton, closeButton } = formModalStyles[config.modalcss];
+
+  const handleCreate = () => {
+    // Call handleSubmit function when the "Create" button is clicked
+    handleSubmit();
+    onClose(); // Close the modal after handling submit action (assuming onClose closes the modal)
+  };
 
   return (
     <div>
@@ -14,7 +21,8 @@ const FormModal = ({ isOpen, onClose, config, children, backdropClass }) => {
           {/* Modal container with scrolling */}
           <div className={container}>
             <h2 className={title}>{config.title}</h2>
-            <hr class="h-px my-5 bg-gray-200 border-0 dark:bg-gray-400"></hr>
+            <hr class="h-px my-4 w-full bg-gray-100 border-2 dark:bg-gray-400"></hr>
+            <div className='px-6 py-2'>
             <p className={content}>{config.content}</p>
 
             {/* Render children passed to the modal */}
@@ -23,12 +31,20 @@ const FormModal = ({ isOpen, onClose, config, children, backdropClass }) => {
             </div>
 
             <div className="mt-4 flex justify-end">
-              <button
+
+            <button
                 className={closeButton}
                 onClick={onClose}
               >
-                Close
+                {config.buttons.cancel}
               </button>
+              <button
+                className={createbutton}
+                onClick={handleCreate}
+               >
+                {config.buttons.create}
+              </button>
+              </div>
             </div>
           </div>
         </div>

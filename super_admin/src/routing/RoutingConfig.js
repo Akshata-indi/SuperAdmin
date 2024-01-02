@@ -5,33 +5,53 @@ import TeamMeanus from '../components/SidebarMenus/SidebarMenus/TeamMenus'
 import User from '../pages/userContent/User'
 import Groups from '../pages/groups/Groups';
 import Roles from '../pages/roles/Roles';
+import Layout from '../components/layout/Layout'
+import Login from "../login-component/login/Login"
+import Register from '../login-component/register/Register'
 
 const routesConfig = [
   {
-    path: '/',
-    label:"Home",
-    element: <HomeMenus />,
-    children: [
-        {
-          path: 'home1',
-          element: <User />,
-        },
-        {
-          path: 'home2',
-          element: <Groups />,
-        },
-        {
-          path: 'home3',
-          element: <Roles />,
-        },
-        {
-          path: 'home4',
-          element: <User />,
-        },
-      ],
+    path : "/",
+    element : <Login/>
   },
   {
-    path: '/team',
+    path : "/register",
+    element : <Register/>
+  },
+  {
+    path : "layout",
+    element : <Layout/>,
+    children : [
+      {
+
+        path: 'home',
+        label:"Home",
+        element: <HomeMenus />,
+        children: [
+          
+            {
+              path: 'home1',
+              element: <User />,
+            },
+            {
+              path: 'home2',
+              element: <Groups />,
+            },
+            {
+              path: 'home3',
+              element: <Roles />,
+            },
+            {
+              path: 'home4',
+              element: <User />,
+            },
+      ]
+
+      },
+    
+  
+  {
+    path: 'team',
     label:"Team",
     element: <TeamMeanus />,
     children: [
@@ -102,8 +122,11 @@ const routesConfig = [
         path: 'policies',
         element: <User />,
       },
-    ],
+    ]
   },
-];
+    ]
+}
+]
+  
 
 export default routesConfig;

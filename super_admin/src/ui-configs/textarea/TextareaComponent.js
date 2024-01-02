@@ -1,13 +1,14 @@
 import React from 'react';
 
-const TextareaComponent = ({ label, value, onChange, textcss }) => {
+const TextareaComponent = ({ label, value, onChange, textcss, placeholder }) => {
   return (
     <div>
       <label>{label}</label>
-      <textarea 
-        value={value} 
+      <textarea
+        value={value}
+        placeholder={placeholder}
         onChange={onChange}
-        className={textcss} 
+        className={textcss}
       />
     </div>
   );

@@ -7,6 +7,8 @@ const ButtonStyle = {
     hover2: "px-9 py-2 text-sm text-gray-600 bg-white rounded-md border-2 hover:bg-gray-300 fixed top-4 right-2 mt-20 mr-6",
     hover3: 'px-8 py-2 text-sm text-white bg-blue-500 rounded-md border-2 hover:bg-blue-600 fixed bottom-10 right-0 mb-38 mr-8',
     hover4:'px-5 py-2 text-sm text-black bg-white rounded-md border-2 hover:bg-gray-300 fixed bottom-10 right-4 mb-38 mr-40',
+    PrimaryRegister:' border border-blue-600 text-blue-600 font-semibold py-2 px-4 rounded w-80 h-12 mt-4 hover:text-white hover:bg-blue-500',
+    PrimaryLogin:'border border-blue-500 text-blue-500 font-semibold py-2 px-4 rounded h-12 w-32 hover:text-white hover:bg-blue-500'
 
 }
 

@@ -1,4 +1,5 @@
-const TableStyle = {
+const TableStyle = [
+{
     
   
 
@@ -10,8 +11,12 @@ const TableStyle = {
    
   appdata :'text-start text-gray-700 px-2 font-semibold text-md',
 
+
+
+ 
  
   }
+]
 
   export default TableStyle;
        

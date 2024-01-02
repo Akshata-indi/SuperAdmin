@@ -1,5 +1,6 @@
   import React, { useEffect, useState } from 'react'
   import axios from 'axios'
+
   import { getApiUrl } from '../../api/getApi/GetApi'
   import { ROLE_API } from './RoleConfig'
   import 'react-loading-skeleton/dist/skeleton.css'
@@ -14,13 +15,29 @@
   import TableComponent from '../../configurations/tables/TableComponent'
 
 
+  
+  // import { ROLE_API , tableContent, roleModal, rolemodalData, dropDownData ,SearchInputConfig} from './RoleConfig'
+
+  // import { getApiUrl } from '../../services/getApi/GetApi'
+  // import { ROLE_API } from './RoleConfig'
+
+  // import 'react-loading-skeleton/dist/skeleton.css'
+  // import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
+  // import SearchableComp from '../../configurations/search/SearchableComp'
+  // import TableComponent from '../../configurations/tables/TableComponent'
+  // import Fmodal from '../../configurations/form_modal/Fmodal'
+  
+  // import  {tableContent}  from  '../../components/RoleForms/Body/roleData'
+  // import roleModal from '../../components/RoleForms/Body/roleModal.json'
+  // import rolemodalData from '../../components/RoleForms/Body/rolemodalData.json'
+  // import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
+  // import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
+
   const RoleComponent = () => {
     const [data, setData] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
-
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://192.168.0.107:8080/api/getAll/Role/getall");
+        const response = await axios.get("http://localhost:3000/roles");
         console.log('API Response123:', response.data);
 
         setData(response.data);
@@ -28,38 +45,33 @@
         console.error(`Error fetching ${ROLE_API} data:`, error);
       }
     };
+    console.log("sssssss")
+    //get updated data of form
+    // const handleSubmit = async (values) => {
+    //   try {
+    //     // Here, you can perform actions after the form submission, like fetching updated data
+    //     const response = await axios.get("http://localhost:3001/roles");
+    //     setData(response.data);
+    //   } catch (error) {
+    //     console.error(`Error fetching ${ROLE_API} data:`, error);
+    //   }
+    // };
 
     useEffect(() => {
-      setTimeout(() => {
-        fetchData();
-        setIsLoading(false)
-      }, 2000);
-    
-    }, []);
-
-      // const role = [
-      //   { roleId:101, roleName: 'Role 1', description: 'Description 1',  },
-      //   { roleId:102, roleName: 'Role 2', description: 'Description 2',  },
-      //   { roleId:103, roleName: 'Role 3', description: 'Description 3',  },
-      //   { roleId:104, roleName: 'Role 4', description: 'Description 4',  },
-      //   { roleId:105, roleName: 'Role 5', description: 'Description 5',  },
-      //   { roleId:106, roleName: 'Role 6', description: 'Description 6',  },
-      //   { roleId:107, roleName: 'Role 7', description: 'Description 7',  },
-      //   { roleId:108, roleName: 'Role 8', description: 'Description 8',  },
-      // ];
-      // console.log(role)
+      fetchData()
+    }, [])
         
     return (
       <div >
 
         <div className='btn-container mb-2 mx-8 flex justify-end mr-20 my-12'>
-        <Fmodal configs={roleModal} iconfig={rolemodalData} />
+          <Fmodal configs={roleModal} iconfig={rolemodalData} handleSubmit={fetchData}/>
         </div>
 
-        <form className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] overflow-y-auto">
+        <div className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] overflow-y-auto">
         <div className='bg-gray-100 shadow-sm h-[8vh]'>
         <div className='flex justify-start'>
-        <CustomDropdown items={dropDownData} />
+          <CustomDropdown items={dropDownData} />
         <div className='flex justify-end ml-24 '>
           {/* <SearchableComp SearchConfig={SearchInputConfig} /> */}
         </div>
@@ -67,8 +79,9 @@
     </div>
     <div className=" ">
       <TableComponent tableConfig={tableContent} data={data}/>
+     
     </div>
-  </form>
+  </div>
   </div>
     )
   }

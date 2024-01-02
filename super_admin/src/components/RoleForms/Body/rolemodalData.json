@@ -3,11 +3,26 @@
     {
     "label": "roleName",
 
+    "name": "roleName",
+
     "type": "text",
     
-    "placeholder": "First Name",
+    "placeholder": "Enter Role Name",
     
-    "textcss": "boxInput"   
+    "textcss": "boxInput2"   
+    },
+
+    {
+    "label": "roleDescription",
+
+    "name": "roleDescription",
+    
+    "type": "textarea",
+        
+    "placeholder": "Enter Description",
+        
+    "textcss": "boxInput2"   
     }
+    
 
 ]

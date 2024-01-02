@@ -3,7 +3,7 @@ export const tableContent = [
         name: "groupId",
         label: "Group Id",
         dataType: "number",
-        cssClass: "datastyle",
+        cssClass: "data style",
         clmncss: "style1"
     },
     {
@@ -14,7 +14,7 @@ export const tableContent = [
         clmncss: "style1"
     },
     {
-        name: "description",
+        name: "groupDescription",
         label: "Description",
         dataType: "string",
         cssClass: "datastyle",

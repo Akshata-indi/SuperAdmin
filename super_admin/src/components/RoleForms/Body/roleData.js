@@ -1,6 +1,6 @@
 export const tableContent = [
     {
-        name: "roleId",
+        name: "id",
         label: "Role Id",
         dataType: "number",
         cssClass: "datastyle",
@@ -14,7 +14,7 @@ export const tableContent = [
         clmncss : "style1"
     },
     {
-        name: "description",
+        name: "roleDescription",
         label: "Description",
         dataType: "string",
         cssClass: "datastyle",

@@ -1,6 +1,6 @@
 import React from 'react'
 import TableComponent from './TableComponent'
-import { tableContent } from './Tabledata'
+import tableContent from './Tabledata'
 
 
 

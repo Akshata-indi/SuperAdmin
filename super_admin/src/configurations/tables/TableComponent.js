@@ -10,7 +10,7 @@ function TableComponent({tableConfig, data}) {
   return (
     <div >
       
-      <DynamicTable config= {tableConfig} data={data}  />
+      <DynamicTable config= {tableConfig}  data={data}  />
     </div>
   );
 }

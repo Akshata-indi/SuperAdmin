@@ -13,29 +13,29 @@ import RadioComponent from '../../ui-configs/radio_button/RadioComponent';
 import TextareaComponent from '../../ui-configs/textarea/TextareaComponent';
 import TimeComponent from '../../ui-configs/time/TimeComponent';
 
-const FormComponent = ({ config }) => {
-  const [values, setValues] = useState([]);
-  
+const FormComponent = ({ config, handleSubmit }) => {
+  const [values, setValues] = useState({});
+
   const handleChange = (name, value) => {
-    
     setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Make your axios call here
+      const response = await axios.post('http://localhost:3001/roles', values);
+      console.log('Data sent:', response.data);
       
-      const response = await axios.post('http://192.168.0.107:8080/api/createRole/Role', values);
-      console.log('Data sent:', response.data); 
-    
+      // If the above API call is successful, trigger the handleSubmit function from props
+      handleSubmit(values);
     } catch (error) {
-      console.error('Error:', error); 
-      
+      console.error('Error:', error);
     }
   };
-  
+
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         {config.map((field, index) => (
           <div key={index}>
             {field.type === "text" && (
@@ -133,8 +133,9 @@ const FormComponent = ({ config }) => {
             {field.type === 'textarea' && (
               <TextareaComponent
                 label={field.label}
+                name={field.label}
                 placeholder={field.placeholder}
-                value={config[field.label] || ''}
+                value={values[field.label] || ''}
                 onChange={(e) => handleChange(field.label, e.target.value)}
                 textcss={TextStyle[field.textcss]}
 

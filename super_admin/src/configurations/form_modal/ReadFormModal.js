@@ -6,7 +6,7 @@ import FormComponent from '../form/FormComponent';
 import Input from '../../ui-configs/input/Input';
 import inputData from '../../ui-configs/input/inputData.json'
 
-const ReadFormModal = ({config, inputconfig}) => {
+const ReadFormModal = ({config, inputconfig, handleSubmit}) => {
   const [openModal, setOpenModal] = useState(null);
 
   const closeModal = () => {
@@ -34,7 +34,7 @@ const ReadFormModal = ({config, inputconfig}) => {
           // backdropClass="bg-black opacity-50" // Add your custom classes for the backdrop here
         >
           {/* Render FormComponent within the modal when open */}
-          {openModal === modal && <FormComponent config={inputconfig}/>} 
+          {openModal === modal && <FormComponent config={inputconfig} handleSubmit={handleSubmit}/>} 
         </FormModal>
       ))}
     </div>

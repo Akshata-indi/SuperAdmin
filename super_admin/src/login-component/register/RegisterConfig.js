@@ -1,4 +1,4 @@
-export const postEndpoint = 'users'
+export const postEndpoint = 'User'
 
 const RegisterInputConfig = [
     { label: 'name', placeholder: 'First Name', inputcss: 'standard', formik: true, type: 'text' },

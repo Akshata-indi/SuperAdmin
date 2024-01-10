@@ -3,6 +3,8 @@
     {
     "label": "roleName",
 
+    "name": "roleName",
+
     "type": "text",
     
     "placeholder": "Enter Role Name",
@@ -11,7 +13,9 @@
     },
 
     {
-    "label": "Description",
+    "label": "roleDescription",
+
+    "name": "roleDescription",
     
     "type": "textarea",
         

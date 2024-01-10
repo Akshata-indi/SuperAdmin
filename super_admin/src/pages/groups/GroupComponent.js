@@ -7,6 +7,13 @@ import { getApiUrl } from '../../services/getApi/GetApi'
 
 
 import 'react-loading-skeleton/dist/skeleton.css'
+
+
+import { tableContent } from '../roles/RoleConfig'
+import Fmodal from '../../configurations/form_modal/Fmodal'
+import roleModal from '../../components/groupForm/groupModal.json'
+import rolemodalData from '../../components/groupForm/groupmenuData.json'
+
 import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
 import SearchableComp from '../../configurations/search/SearchableComp'
 import TableComponent from '../../configurations/tables/TableComponent'

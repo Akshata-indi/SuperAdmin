@@ -1,21 +1,21 @@
-export const tableContent = [
+const tableContent = [
     {
-        name: "name",
-        label: "Name",
+        name: "id",
+        label: "Role Id",
+        dataType: "number",
+        cssClass: "datastyle",
+        clmncss : "style1"
+    },
+    {
+        name: "roleName",
+        label: "Role Name",
         dataType: "string",
         cssClass: "datastyle",
         clmncss : "style1"
     },
     {
-        name: "email",
-        label: "Email",
-        dataType: "string",
-        cssClass: "datastyle",
-        clmncss : "style1"
-    },
-    {
-        name: "status",
-        label: "Status",
+        name: "roleDescription",
+        label: "Description",
         dataType: "string",
         cssClass: "datastyle",
         clmncss : "style1"
@@ -23,3 +23,4 @@ export const tableContent = [
     
     
   ];
+  export default tableContent;

@@ -13,5 +13,10 @@
         "label": "Group 3",
         "url": "/Group3",
         "cssClass": "style5"
+    },
+    {
+        "label": "Group 4",
+        "url": "/Group4",
+        "cssClass": "style5"
     }
 ]

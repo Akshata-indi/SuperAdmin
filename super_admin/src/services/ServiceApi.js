@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3003';
+// const baseUrl = 'http://localhost:3003';
+const baseUrl = 'http://192.168.0.101:8080/api/addGroup/Group';
 
 const apiService = axios.create({
   baseURL: baseUrl,

@@ -1,25 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 // eslint-disable-next-line
+import { GROUP_API, tableContent, groupModal, groupModalData, dropDownData, SearchInputConfig } from './GroupConfig'
+
 import { getApiUrl } from '../../services/getApi/GetApi'
-import { GROUP_API } from './GroupConfig'
+
+
 import 'react-loading-skeleton/dist/skeleton.css'
-import { tableContent } from '../../components/GroupForm/Body/GroupData'
-import Fmodal from '../../configurations/form_modal/Fmodal'
-import roleModal from '../../components/GroupForm/Body/groupModal.json'
-import rolemodalData from '../../components/GroupForm/Body/groupmodalData.json'
 import CustomDropdown from '../../components/NewGroupForms/Drop Down Menu/CustomDropdown'
-import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
 import SearchableComp from '../../configurations/search/SearchableComp'
-import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 import TableComponent from '../../configurations/tables/TableComponent'
+import Fmodal from '../../configurations/form_modal/Fmodal'
+
+// import { tableContent } from '../../components/GroupForm/Body/GroupData'
+// import groupModal from '../../components/GroupForm/Body/groupModal.json'`
+// import groupModalData from '../../components/GroupForm/Body/groupmodalData.json'
+// import dropDownData from '../../components/NewGroupForms/Drop Down Menu/DropDown.json'
+// import SearchInputConfig from '../../configurations/search/SearchInputConfig.json'
 
 
 
 const GroupComponent = () => {
   const [data, setData] = useState([])
   // eslint-disable-next-line
-  const [isLoading, setIsLoading] = useState(true)
+  // const [isLoading, setIsLoading] = useState(true)
 
   const fetchData = async () => {
     try {
@@ -32,31 +36,16 @@ const GroupComponent = () => {
     }
   };
 
+
   useEffect(() => {
-    setTimeout(() => {
-      fetchData();
-      setIsLoading(false)
-    }, 2000);
-
-  }, []);
-
-  // const role = [
-  //   { roleId:101, roleName: 'Role 1', description: 'Description 1',  },
-  //   { roleId:102, roleName: 'Role 2', description: 'Description 2',  },
-  //   { roleId:103, roleName: 'Role 3', description: 'Description 3',  },
-  //   { roleId:104, roleName: 'Role 4', description: 'Description 4',  },
-  //   { roleId:105, roleName: 'Role 5', description: 'Description 5',  },
-  //   { roleId:106, roleName: 'Role 6', description: 'Description 6',  },
-  //   { roleId:107, roleName: 'Role 7', description: 'Description 7',  },
-  //   { roleId:108, roleName: 'Role 8', description: 'Description 8',  },
-  // ];
-  // console.log(role)
+    fetchData()
+  }, [])
 
   return (
     <div >
 
       <div className='btn-container mb-2 mx-8 flex justify-end mr-20 my-12'>
-        <Fmodal configs={roleModal} iconfig={rolemodalData} />
+        <Fmodal configs={groupModal} iconfig={groupModalData} handleSubmit={fetchData} />
       </div>
 
       <form className="bg-white border w-[90%] mx-4 border-gray-300 shadow-sm rounded h-[60vh] overflow-y-auto">

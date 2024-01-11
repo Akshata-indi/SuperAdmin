@@ -1,7 +1,7 @@
 [
     {
         "name": "Create new Group",
-        "label": " + Create new Group",
+        "label": " + Create New Group",
         "type": "button",
         "buttoncss": "Primary"
     }

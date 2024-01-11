@@ -1,0 +1,16 @@
+[
+    {
+        "label": "groupName",
+        "name": "groupName",
+        "type": "text",
+        "placeholder": "Enter Group Name",
+        "textcss": "boxInput2"
+    },
+    {
+        "label": "groupDescription",
+        "name": "groupDescription",
+        "type": "textarea",
+        "placeholder": "Enter Description",
+        "textcss": "boxInput2"
+    }
+]
